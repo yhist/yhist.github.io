@@ -49,3 +49,124 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
+
+.wrap {
+  position: relative;
+  display: block;
+}
+
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #fff;
+  z-index: 9999;
+  text-align: center;
+}
+
+.gnb {
+  position: relative;
+  display: inline-block;
+}
+
+.gnb > li {
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 0;
+  margin: 0 10px;
+}
+
+.gnb > li > a {
+  display: block;
+  line-height: 80px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.gnb > li > a:hover {
+  color: salmon;
+}
+
+.visual {
+  position: relative;
+  display: block;
+  height: 700px;
+  background-color: lightgoldenrodyellow;
+}
+
+.visual .inner {
+  height: 100%;
+}
+
+.profile {
+  position: relative;
+  display: block;
+  height: 800px;
+  background-color: lightcyan;
+}
+
+.profile .inner {
+  height: 100%;
+}
+
+.portfolio {
+  position: relative;
+  display: block;
+}
+
+.portfolio h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.portfolio h3 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+
+}
+
+.portfolio h4 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+
+}
+
+.portfolio h5 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.portfolio-wrap {
+  position: relative;
+}
+.portfolio-cate {
+  position: relative;
+}
+
+.portfolio-list {
+  position: relative;
+  overflow: hidden;
+}
+.portfolio-list > li {
+  position: relative;
+  float: left;
+  width: 50%;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.portfolio-list > li a {
+  display: block;
+}
+
+.portfolio-list > li a:hover {
+  color: salmon;
+}
