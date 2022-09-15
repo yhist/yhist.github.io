@@ -1,244 +1,352 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="images/apple-touch-icon.png"
+    />
+    <title>도연희 포트폴리오</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="format-detection" content="telephone=no">
-  <link rel="shortcut icon" href="images/favicon.ico" />
-  <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon.png">
-  <title>도연희 포트폴리오</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />
 
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport"
-    content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta
+      name="description"
+      content="프론트엔드 개발자 도연희 포트폴리오입니다."
+    />
+    <meta name="keywords" content="프론트엔드, 퍼블리셔, 개발자 포트폴리오" />
+    <meta name="author" content="도연희" />
+    <meta property="og:title" content="프론트엔드 개발자 도연희 포트폴리오" />
+    <meta
+      property="og:site_name"
+      content="프론트엔드 개발자 도연희 포트폴리오"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="yhist.github.io" />
+    <meta property="og:image" content="" />
+    <meta
+      property="og:description"
+      content="프론트엔드 개발자 도연희 포트폴리오입니다."
+    />
 
-  <meta name="description" content="프론트엔드 개발자 도연희 포트폴리오입니다." />
-  <meta name="keywords" content="프론트엔드, 퍼블리셔, 개발자 포트폴리오" />
-  <meta name="author" content="도연희" />
-  <meta property="og:title" content="프론트엔드 개발자 도연희 포트폴리오">
-  <meta property="og:site_name" content="프론트엔드 개발자 도연희 포트폴리오" />
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="yhist.github.io">
-  <meta property="og:image" content="">
-  <meta property="og:description" content="프론트엔드 개발자 도연희 포트폴리오입니다." />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css"
+      integrity="sha512-gMjQeDaELJ0ryCI+FtItusU9MkAifCZcGq789FrzkiM49D8lbDhoaUaIX4ASU187wofMNlgBJ4ckbrXM9sE6Pg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-  <link rel="stylesheet" href="css/reset.css">
-  <link
-    href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css"
-    integrity="sha512-gMjQeDaELJ0ryCI+FtItusU9MkAifCZcGq789FrzkiM49D8lbDhoaUaIX4ASU187wofMNlgBJ4ckbrXM9sE6Pg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+    <script src="js/prefixfree.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="js/swiper/swiper.min.css" />
+    <script src="js/swiper/swiper.min.js"></script>
+    <!-- aos -->
+    <link href="js/aos/aos.css" rel="stylesheet" />
+    <script src="js/aos/aos.js"></script>
+    <!-- waypoint -->
+    <script src="js/jquery.waypoints.js"></script>
+    <!-- gsap -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"
+      integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- lightbox2 -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="js/lightbox2/css/lightbox.css"
+    />
+    <script src="js/lightbox2/js/lightbox.js"></script>
+    <!-- Progressbar -->
+    <script type="text/javascript" src="js/progressbar/progressbar.js"></script>
 
-  <!--[if lt IE 9]> 
-    <script src="js/html5shiv.js"></script>
-  <![endif]-->
-  <script src="js/prefixfree.min.js"></script>
-  <script src="js/respond.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-  <link rel="stylesheet" href="js/swiper/swiper.min.css">
-  <script src="js/swiper/swiper.min.js"></script>
-  <!-- aos -->
-  <link href="js/aos/aos.css" rel="stylesheet">
-  <script src="js/aos/aos.js"></script>
-  <!-- waypoint -->
-  <script src="js/jquery.waypoints.js"></script>
-  <!-- gsap -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"
-    integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!-- lightbox2 -->
-  <link rel="stylesheet" type="text/css" href="js/lightbox2/css/lightbox.css">
-  <script src="js/lightbox2/js/lightbox.js"></script>
-  <!-- Progressbar -->
-  <script type="text/javascript" src="js/progressbar/progressbar.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js"></script>
+  </head>
 
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/script.js"></script>
-</head>
+  <body>
+    <div class="wrap">
+      <header class="header">
+        <div class="inner">
+          <ul class="gnb">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#profile">PROFILE</a></li>
+            <li><a href="#portfolio">PORTFOLIO</a></li>
+            <li><a href="#life">LIFE</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+            <li>
+              <a href="https://github.com/yhist" target="_blank">GitHub</a>
+            </li>
+            <li><a href="도연희.pdf">Download</a></li>
+          </ul>
+        </div>
+      </header>
+      <section class="visual" id="visual">
+        <h2>visual</h2>
+      </section>
+      <section class="profile" id="profile">
+        <div class="inner">
+          <h2>profile</h2>
+        </div>
+      </section>
+      <section class="portfolio" id="portfolio">
+        <div class="inner">
+          <h2>portfolio</h2>
+          <div class="portfolio-wrap">
+            <h3>Publishing Clone Coding</h3>
+            <div class="portfolio-cate">
+              <h4>Personal Clone</h4>
+              <ul class="portfolio-list">
+                <li>
+                  <h5>leeumstore(PC/Mobile)</h5>
+                  <a href="https://yhist.github.io/leeumstore/" target="_blank">
+                    <img src="" alt="리움스토어" />
+                  </a>
+                  <div class="">
+                    <a
+                      href="https://yhist.github.io/leeumstore/"
+                      target="_blank"
+                      >work</a
+                    >
+                    <a
+                      href="https://github.com/yhist/leeumstore"
+                      target="_blank"
+                      >github</a
+                    >
+                    <a href="http://leeumstore.org/" target="_blank">origin</a>
+                  </div>
+                </li>
+                <li>
+                  <h5>정육각(PC/Mobile)</h5>
+                  <a
+                    href="https://yhist.github.io/jeongyookgak/"
+                    target="_blank"
+                  >
+                    <img src="http://placeimg.com/400/360/any" alt="사이트명" />
+                  </a>
+                  <div class="">
+                    <a
+                      href="https://yhist.github.io/jeongyookgak/"
+                      target="_blank"
+                      >work</a
+                    >
+                    <a
+                      href="https://github.com/yhist/jeongyookgak"
+                      target="_blank"
+                      >github</a
+                    >
+                    <a href="https://www.jeongyookgak.com/index" target="_blank"
+                      >origin</a
+                    >
+                  </div>
+                </li>
+              </ul>
+            </div>
 
-<body>
-  <div class="wrap">
-    <header class="header">
-      <div class="inner">
-        <ul class="gnb">
-          <li><a href="#home">HOME</a></li>
-          <li><a href="#profile">PROFILE</a></li>
-          <li><a href="#portfolio">PORTFOLIO</a></li>
-          <li><a href="#life">LIFE</a></li>
-          <li><a href="#contact">CONTACT</a></li>
-          <li><a href="https://github.com/yhist" target="_blank">GitHub</a></li>
-          <li><a href="도연희.pdf">Download</a></li>
-        </ul>
-      </div>
-    </header>
-    <section class="visual" id="visual">
-      <h2>visual</h2>
-    </section>
-    <section class="profile" id="profile">
-      <div class="inner">
-        <h2>profile</h2>
-      </div>
-    </section>
-    <section class="portfolio" id="portfolio">
-      <div class="inner">
-        <h2>portfolio</h2>
-        <div class="portfolio-wrap">
-          <h3>Publishing Clone Coding</h3>
-          <div class="portfolio-cate">
-            <h4>Personal Clone</h4>
-            <ul class="portfolio-list">
-              <li>
-                <h5>도시락통(PC/Mobile)</h5>
-                <a href="깃허브page주소" target="_blank">
-                  <img src="http://placeimg.com/400/360/any" alt="사이트명">
-                </a>
-                <div class="">
-                  <a href="깃허브page주소" target="_blank">work</a>
-                  <a href="깃허브주소" target="_blank">github</a>
-                  <a href="원사이트주소" target="_blank">origin</a>
-                </div>
-              </li>
-              <li>
-                <h5>정육각(PC/Mobile)</h5>
-                <a href="https://yhist.github.io/jeongyookgak/" target="_blank">
-                  <img src="http://placeimg.com/400/360/any" alt="사이트명">
-                </a>
-                <div class="">
-                  <a href="https://yhist.github.io/jeongyookgak/" target="_blank">work</a>
-                  <a href="https://github.com/yhist/jeongyookgak" target="_blank">github</a>
-                  <a href="https://www.jeongyookgak.com/index" target="_blank">origin</a>
-                </div>
-              </li>
-            </ul>
+            <div class="portfolio-cate">
+              <h4>Study Clone</h4>
+              <ul class="portfolio-list">
+                <li>
+                  <h5>K-Water(PC/Mobile)</h5>
+                  <a href="https://yhist.github.io/K-water/" target="_blank">
+                    <img src="http://placeimg.com/400/360/any" alt="사이트명" />
+                  </a>
+                  <div class="">
+                    <a href="https://yhist.github.io/K-water/" target="_blank"
+                      >work</a
+                    >
+                    <a href="https://github.com/yhist/K-water" target="_blank"
+                      >github</a
+                    >
+                    <a
+                      href="https://www.kwater.or.kr/main.do?s_mid=1"
+                      target="_blank"
+                      >origin</a
+                    >
+                  </div>
+                </li>
+                <li>
+                  <h5>거제청년이룸(PC/Mobile/vue.js)</h5>
+                  <a href="http://localhost:8080/page-geoje/" target="_blank">
+                    <img src="http://placeimg.com/400/360/any" alt="사이트명" />
+                  </a>
+                  <div class="">
+                    <a
+                      href="https://yhist.github.io/geojeyouth/"
+                      target="_blank"
+                      >work</a
+                    >
+                    <a
+                      href="https://github.com/yhist/geojeyouth"
+                      target="_blank"
+                      >github</a
+                    >
+
+                    <a href="http://localhost:8080/page-geoje/" target="_blank"
+                      >vue.js work</a
+                    >
+                    <a
+                      href="https://github.com/yhist/page-geoje"
+                      target="_blank"
+                      >vue.js github</a
+                    >
+
+                    <a href="https://geojeyouth.com/web/" target="_blank"
+                      >origin</a
+                    >
+                  </div>
+                </li>
+                <li>
+                  <h5>노엘로힐스(PC/Mobile/vue.js)</h5>
+                  <a href="https://yhist.github.io/page-noelo/" target="_blank">
+                    <img src="http://placeimg.com/400/360/any" alt="사이트명" />
+                  </a>
+                  <div class="">
+                    <a
+                      href="https://yhist.github.io/noelohills/"
+                      target="_blank"
+                      >work</a
+                    >
+                    <a
+                      href="https://github.com/yhist/noelohills"
+                      target="_blank"
+                      >github</a
+                    >
+
+                    <a
+                      href="https://yhist.github.io/page-noelo/"
+                      target="_blank"
+                      >vue.js work</a
+                    >
+                    <a href="https://github.com/yhist/vuenoelo" target="_blank"
+                      >vue.js github</a
+                    >
+
+                    <a href="https://noelohills.com/" target="_blank">origin</a>
+                  </div>
+                </li>
+                <li>
+                  <h5>마시그레이(PC/Mobile/vue.js)</h5>
+                  <a href="https://yhist.github.io/page-masi/" target="_blank">
+                    <img src="http://placeimg.com/400/360/any" alt="사이트명" />
+                  </a>
+                  <div class="">
+                    <a href="https://yhist.github.io/masigray/" target="_blank"
+                      >work</a
+                    >
+                    <a href="https://github.com/yhist/masigray" target="_blank"
+                      >github</a
+                    >
+
+                    <a href="https://yhist.github.io/page-masi/" target="_blank"
+                      >vue.js work</a
+                    >
+                    <a href="https://github.com/yhist/page-masi" target="_blank"
+                      >vue.js github</a
+                    >
+
+                    <a
+                      href="https://www.masigray.com:5021/main/main.asp"
+                      target="_blank"
+                      >origin</a
+                    >
+                  </div>
+                </li>
+                <li>
+                  <h5>STX 건설(PC/Vue.js)</h5>
+                  <a href="https://yhist.github.io/stxconst/" target="_blank">
+                    <img src="http://placeimg.com/400/360/any" alt="사이트명" />
+                  </a>
+                  <div class="">
+                    <a href="https://yhist.github.io/stxconst/" target="_blank"
+                      >work</a
+                    >
+                    <a href="https://github.com/yhist/stxconst" target="_blank"
+                      >github</a
+                    >
+
+                    <a href="https://yhist.github.io/page-stx/" target="_blank"
+                      >vue.js work</a
+                    >
+                    <a href="https://github.com/yhist/page-stx" target="_blank"
+                      >vue.js github</a
+                    >
+
+                    <a href="http://www.stxconst.co.kr/" target="_blank"
+                      >origin</a
+                    >
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
-
-          <div class="portfolio-cate">
-            <h4>Study Clone</h4>
-            <ul class="portfolio-list">
-              <li>
-                <h5>K-Water(PC/Mobile)</h5>
-                <a href="https://yhist.github.io/K-water/" target="_blank">
-                  <img src="http://placeimg.com/400/360/any" alt="사이트명">
-                </a>
-                <div class="">
-                  <a href="https://yhist.github.io/K-water/" target="_blank">work</a>
-                  <a href="https://github.com/yhist/K-water" target="_blank">github</a>
-                  <a href="https://www.kwater.or.kr/main.do?s_mid=1" target="_blank">origin</a>
-                </div>
-              </li>
-              <li>
-                <h5>거제청년이룸(PC/Mobile/vue.js)</h5>
-                <a href="http://localhost:8080/page-geoje/" target="_blank">
-                  <img src="http://placeimg.com/400/360/any" alt="사이트명">
-                </a>
-                <div class="">
-                  <a href="https://yhist.github.io/geojeyouth/" target="_blank">work</a>
-                  <a href="https://github.com/yhist/geojeyouth" target="_blank">github</a>
-
-                  <a href="http://localhost:8080/page-geoje/" target="_blank">vue.js work</a>
-                  <a href="https://github.com/yhist/page-geoje" target="_blank">vue.js github</a>
-
-                  <a href="https://geojeyouth.com/web/" target="_blank">origin</a>
-                </div>
-              </li>
-              <li>
-                <h5>노엘로힐스(PC/Mobile/vue.js)</h5>
-                <a href="https://yhist.github.io/page-noelo/" target="_blank">
-                  <img src="http://placeimg.com/400/360/any" alt="사이트명">
-                </a>
-                <div class="">
-                  <a href="https://yhist.github.io/noelohills/" target="_blank">work</a>
-                  <a href="https://github.com/yhist/noelohills" target="_blank">github</a>
-
-                  <a href="https://yhist.github.io/page-noelo/" target="_blank">vue.js work</a>
-                  <a href="https://github.com/yhist/vuenoelo" target="_blank">vue.js github</a>
-
-                  <a href="https://noelohills.com/" target="_blank">origin</a>
-                </div>
-              </li>
-              <li>
-                <h5>마시그레이(PC/Mobile/vue.js)</h5>
-                <a href="https://yhist.github.io/page-masi/" target="_blank">
-                  <img src="http://placeimg.com/400/360/any" alt="사이트명">
-                </a>
-                <div class="">
-                  <a href="https://yhist.github.io/masigray/" target="_blank">work</a>
-                  <a href="https://github.com/yhist/masigray" target="_blank">github</a>
-
-                  <a href="https://yhist.github.io/page-masi/" target="_blank">vue.js work</a>
-                  <a href="https://github.com/yhist/page-masi" target="_blank">vue.js github</a>
-
-                  <a href="https://www.masigray.com:5021/main/main.asp" target="_blank">origin</a>
-                </div>
-              </li>
-              <li>
-                <h5>STX 건설(PC/Vue.js)</h5>
-                <a href="https://yhist.github.io/stxconst/" target="_blank">
-                  <img src="http://placeimg.com/400/360/any" alt="사이트명">
-                </a>
-                <div class="">
-                  <a href="https://yhist.github.io/stxconst/" target="_blank">work</a>
-                  <a href="https://github.com/yhist/stxconst" target="_blank">github</a>
-
-                  <a href="https://yhist.github.io/page-stx/" target="_blank">vue.js work</a>
-                  <a href="https://github.com/yhist/page-stx" target="_blank">vue.js github</a>
-
-                  <a href="http://www.stxconst.co.kr/" target="_blank">origin</a>
-                </div>
-              </li>
-            </ul>
+          <div class="portfolio-wrap">
+            <h3>Vue.js Coding</h3>
+            <div class="portfolio-cate">
+              <h4>study Vue.js</h4>
+              <ul class="portfolio-list">
+                <li>
+                  <h5>MiniMemo(Vue.js)</h5>
+                  <p>프로젝트 설명</p>
+                  <a href="깃허브 vue.js page주소" target="_blank"
+                    >vue.js work</a
+                  >
+                  <a href="깃허브 vue.js 주소" target="_blank">vue.js github</a>
+                  <a href="피그마 링크주소" target="_blank">Figma</a>
+                </li>
+                <li>
+                  <h5>지브리 스튜디오 API(Vue.js/ php / Mysql)</h5>
+                  <p>프로젝트 설명</p>
+                  <a href="dothom 계정주소" target="_blank">vue.js work</a>
+                  <a href="깃허브 vue.js 주소" target="_blank">vue.js github</a>
+                  <a href="피그마 링크주소" target="_blank">Figma</a>
+                </li>
+                <li>
+                  <h5>TodoApp(Vue.js/RESRFULL(jsonServer))</h5>
+                  <p>프로젝트 설명</p>
+                  <a href="dothom 계정주소" target="_blank">vue.js work</a>
+                  <a href="깃허브 vue.js 주소" target="_blank">vue.js github</a>
+                  <a href="피그마 링크주소" target="_blank">Figma</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="portfolio-wrap">
+            <h3>Etc Coding</h3>
           </div>
         </div>
-        <div class="portfolio-wrap">
-          <h3>Vue.js Coding</h3>
-          <div class="portfolio-cate">
-            <h4>study Vue.js</h4>
-            <ul class="portfolio-list">
-              <li>
-                <h5>MiniMemo(Vue.js)</h5>
-                <p>프로젝트 설명</p>
-                <a href="깃허브 vue.js page주소" target="_blank">vue.js work</a>
-                <a href="깃허브 vue.js 주소" target="_blank">vue.js github</a>
-                <a href="피그마 링크주소" target="_blank">Figma</a>
-              </li>
-              <li>
-                <h5>지브리 스튜디오 API(Vue.js/ php / Mysql)</h5>
-                <p>프로젝트 설명</p>
-                <a href="dothom 계정주소" target="_blank">vue.js work</a>
-                <a href="깃허브 vue.js 주소" target="_blank">vue.js github</a>
-                <a href="피그마 링크주소" target="_blank">Figma</a>
-              </li>
-              <li>
-                <h5>TodoApp(Vue.js/RESRFULL(jsonServer))</h5>
-                <p>프로젝트 설명</p>
-                <a href="dothom 계정주소" target="_blank">vue.js work</a>
-                <a href="깃허브 vue.js 주소" target="_blank">vue.js github</a>
-                <a href="피그마 링크주소" target="_blank">Figma</a>
-              </li>
-            </ul>
-          </div>
+      </section>
+      <section class="life" id="life">
+        <div class="inner">
+          <h2>life</h2>
         </div>
-        <div class="portfolio-wrap">
-          <h3>Etc Coding</h3>
-
+      </section>
+      <section class="contact" id="contact">
+        <div class="inner">
+          <h2>contact</h2>
         </div>
-      </div>
-    </section>
-    <section class="life" id="life">
-      <div class="inner">
-        <h2>life</h2>
-      </div>
-    </section>
-    <section class="contact" id="contact">
-      <div class="inner">
-        <h2>contact</h2>
-      </div>
-    </section>
-    <footer class="footer">
-      <div class="inner"></div>
-    </footer>
-  </div>
-</body>
-
+      </section>
+      <footer class="footer">
+        <div class="inner"></div>
+      </footer>
+    </div>
+  </body>
 </html>
