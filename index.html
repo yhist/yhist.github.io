@@ -1,352 +1,630 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="format-detection" content="telephone=no" />
-    <link rel="shortcut icon" href="images/favicon.ico" />
-    <link
-      rel="apple-touch-icon-precomposed"
-      href="images/apple-touch-icon.png"
-    />
-    <title>도연희 포트폴리오</title>
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="shortcut icon" href="images/favicon.ico" />
+  <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon.png" />
+  <title>도연희 포트폴리오</title>
 
-    <meta
-      name="description"
-      content="프론트엔드 개발자 도연희 포트폴리오입니다."
-    />
-    <meta name="keywords" content="프론트엔드, 퍼블리셔, 개발자 포트폴리오" />
-    <meta name="author" content="도연희" />
-    <meta property="og:title" content="프론트엔드 개발자 도연희 포트폴리오" />
-    <meta
-      property="og:site_name"
-      content="프론트엔드 개발자 도연희 포트폴리오"
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="yhist.github.io" />
-    <meta property="og:image" content="" />
-    <meta
-      property="og:description"
-      content="프론트엔드 개발자 도연희 포트폴리오입니다."
-    />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta name="description" content="프론트엔드 개발자 도연희 포트폴리오입니다." />
+  <meta name="keywords" content="프론트엔드, 퍼블리셔, 개발자 포트폴리오" />
+  <meta name="author" content="도연희" />
+  <meta property="og:title" content="프론트엔드 개발자 도연희 포트폴리오" />
+  <meta property="og:site_name" content="프론트엔드 개발자 도연희 포트폴리오" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="yhist.github.io" />
+  <meta property="og:image" content="" />
+  <meta property="og:description" content="프론트엔드 개발자 도연희 포트폴리오입니다." />
 
-    <link rel="stylesheet" href="css/reset.css" />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css"
-      integrity="sha512-gMjQeDaELJ0ryCI+FtItusU9MkAifCZcGq789FrzkiM49D8lbDhoaUaIX4ASU187wofMNlgBJ4ckbrXM9sE6Pg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css"
+    integrity="sha512-gMjQeDaELJ0ryCI+FtItusU9MkAifCZcGq789FrzkiM49D8lbDhoaUaIX4ASU187wofMNlgBJ4ckbrXM9sE6Pg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!--[if lt IE 9]>
+  <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
     <![endif]-->
-    <script src="js/prefixfree.min.js"></script>
-    <script src="js/respond.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <link rel="stylesheet" href="js/swiper/swiper.min.css" />
-    <script src="js/swiper/swiper.min.js"></script>
-    <!-- aos -->
-    <link href="js/aos/aos.css" rel="stylesheet" />
-    <script src="js/aos/aos.js"></script>
-    <!-- waypoint -->
-    <script src="js/jquery.waypoints.js"></script>
-    <!-- gsap -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"
-      integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <!-- lightbox2 -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="js/lightbox2/css/lightbox.css"
-    />
-    <script src="js/lightbox2/js/lightbox.js"></script>
-    <!-- Progressbar -->
-    <script type="text/javascript" src="js/progressbar/progressbar.js"></script>
+  <script src="js/prefixfree.min.js"></script>
+  <script src="js/respond.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <link rel="stylesheet" href="js/swiper/swiper.min.css" />
+  <script src="js/swiper/swiper.min.js"></script>
+  <!-- aos -->
+  <link href="js/aos/aos.css" rel="stylesheet" />
+  <script src="js/aos/aos.js"></script>
+  <!-- waypoint -->
+  <script src="js/jquery.waypoints.js"></script>
+  <!-- gsap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"
+    integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- lightbox2 -->
+  <link rel="stylesheet" type="text/css" href="js/lightbox2/css/lightbox.css" />
+  <script src="js/lightbox2/js/lightbox.js"></script>
+  <!-- Progressbar -->
+  <script type="text/javascript" src="js/progressbar/progressbar.js"></script>
+  <!--  -->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+  <!-- chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/script.js"></script>
 
-    <link rel="stylesheet" href="css/style.css" />
-    <script src="js/script.js"></script>
-  </head>
+</head>
 
-  <body>
-    <div class="wrap">
-      <header class="header">
-        <div class="inner">
-          <ul class="gnb">
-            <li><a href="#home">HOME</a></li>
-            <li><a href="#profile">PROFILE</a></li>
-            <li><a href="#portfolio">PORTFOLIO</a></li>
-            <li><a href="#life">LIFE</a></li>
-            <li><a href="#contact">CONTACT</a></li>
+<body>
+
+  <div class="sns-menu-list">
+    <i class="fas fa-ellipsis-h sns-menu-open"></i>
+    <ul>
+      <li>
+        <a href="#"><i class="fab fa-github"></i></a>
+      </li>
+      <li>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </li>
+      <li>
+        <a href="#"><i class="far fa-envelope"></i></a>
+      </li>
+      <li>
+        <a href="#"><i class="fa fa-book"></i></a>
+      </li>
+    </ul>
+  </div>
+
+
+  <div class="wrap">
+    <header class="header">
+      <div class="inner">
+        <div class="logo">로고</div>
+        <ul class="gnb">
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#profile">PROFILE</a></li>
+          <li><a href="#possibility">POSSIBILITY</a></li>
+          <li><a href="#portfolio">PORTFOLIO</a></li>
+          <li><a href="#life">LIFE</a></li>
+          <li><a href="#vision">VISION</a></li>
+          <!-- <li>
+            <a href="https://github.com/yhist" target="_blank">GitHub</a>
+          </li>
+          <li><a href="도연희.pdf">Download</a></li> -->
+        </ul>
+      </div>
+    </header>
+    <section class="visual" id="home">
+      <div class="visual-bg"></div>
+      <div class="inner">
+        <div class="visual-bg2">
+          <img src="images/yeonhee.png" alt="">
+        </div>
+        <h1> WELCOME, MY NAME IS</h1>
+        <div class="event_wrap">
+          <div class="wrapper">
+            <strong class="move-text">' YEONHEE '</strong>
+          </div>
+        </div>
+        <h2>I'm A FE Developer.</h2>
+        <button class="readme">
+          <a href="#">My Work</a>
+        </button>
+      </div>
+    </section>
+
+
+    <section class="about" id="about">
+      <div class="inner">
+        <h2>Who am i</h2>
+        <div class="about-top">
+          <div class="about-top-pic">
+            <img src="images/selfi1-09-23-00-25-04.jpeg" alt="">
+          </div>
+          <div class="about-top-txt">
+            <p>
+              As a FE Developer <br></p>
+            <div class="swiper-container sw-about">
+              <div class="swiper-wrapper sw-about-list">
+                <div class="swiper-slide">밝고 긍정적인</div>
+                <div class="swiper-slide">가능성이 열린</div>
+                <div class="swiper-slide">초심을 잃지 않는</div>
+                <div class="swiper-slide">끈기 있는</div>
+                <div class="swiper-slide">책임감이 있는</div>
+              </div>
+            </div>
+            <!-- <span class="no-ls">_______</span> -->
+            <span>도연희</span>
+            <P>입니다.</p>
+          </div>
+        </div>
+        <div class="about-bottom">
+          <div class="about-bottom-txt">
+            <h3>배움의 자세를 일지 않고 성장해 나가는 <br> <span>성장하는 프론트엔드개발자 도연희 입니다.</span> </h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae quidem similique veritatis rerum ut
+              aperiam eum eos fuga. Consectetur debitis repudiandae sequi ipsa praesentium aut tempore odio, eos
+              laudantium dolor. aperiam eum eos fuga. Consectetur debitis repudiandae sequi ipsa praesentium aut tempore
+              odio, eos laudantium dolor.
+              <!-- <hr>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia fugit nihil velit molestiae, dignissimos
+              repudiandae alias ab praesentium veniam laborum possimus magnam? Aliquid non laborum distinctio ad cum
+              repellendus doloribus. -->
+            </p>
+          </div>
+          <div class="about-bottom-pic">
+            <img src="images/selfi1-09-23-00-25-04.jpeg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="profile" id="profile">
+      <div class="inner">
+        <div class="profile-text">
+          <h2>PROFILE</h2>
+          <ul class="profile-text-list">
             <li>
-              <a href="https://github.com/yhist" target="_blank">GitHub</a>
+              <h3>PROFILE</h3>
+              <ul>
+                <li>
+                  <span>name</span>
+                  <p>도연희</p>
+                </li>
+                <li>
+                  <span>Birth</span>
+                  <p>1997.09.03</p>
+                </li>
+                <li>
+                  <span>Mail</span>
+                  <p>ehdusgml0903@naver.com</p>
+                </li>
+              </ul>
             </li>
-            <li><a href="도연희.pdf">Download</a></li>
+            <li>
+              <h3>EDUCATION</h3>
+              <ul>
+                <li>
+                  <span>2022</span>
+                  <p>vue 프론트엔드수업 수료</p>
+                </li>
+                <li>
+                  <span>2021</span>
+                  <p>영남대학교 졸업</p>
+                </li>
+                <li>
+                  <span>2021</span>
+                  <p>세양-해외영업팀 근무</p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h3>CERTIFICATE</h3>
+              <ul>
+                <li>
+                  <span>2021</span>
+                  <p>토익스피킹</p>
+                </li>
+                <li>
+                  <span>2021</span>
+                  <p>smat</p>
+                </li>
+                <li>
+                  <span>2020</span>
+                  <p>바리스타자격증</p>
+                </li>
+              </ul>
+            </li>
           </ul>
         </div>
-      </header>
-      <section class="visual" id="visual">
-        <h2>visual</h2>
-      </section>
-      <section class="profile" id="profile">
-        <div class="inner">
-          <h2>profile</h2>
-        </div>
-      </section>
-      <section class="portfolio" id="portfolio">
-        <div class="inner">
-          <h2>portfolio</h2>
-          <div class="portfolio-wrap">
-            <h3>Publishing Clone Coding</h3>
-            <div class="portfolio-cate">
-              <h4>Personal Clone</h4>
-              <ul class="portfolio-list">
-                <li>
-                  <h5>leeumstore(PC/Mobile)</h5>
-                  <a href="https://yhist.github.io/leeumstore/" target="_blank">
-                    <img src="" alt="리움스토어" />
-                  </a>
-                  <div class="">
-                    <a
-                      href="https://yhist.github.io/leeumstore/"
-                      target="_blank"
-                      >work</a
-                    >
-                    <a
-                      href="https://github.com/yhist/leeumstore"
-                      target="_blank"
-                      >github</a
-                    >
-                    <a href="http://leeumstore.org/" target="_blank">origin</a>
-                  </div>
-                </li>
-                <li>
-                  <h5>정육각(PC/Mobile)</h5>
-                  <a
-                    href="https://yhist.github.io/jeongyookgak/"
-                    target="_blank"
-                  >
-                    <img src="http://placeimg.com/400/360/any" alt="사이트명" />
-                  </a>
-                  <div class="">
-                    <a
-                      href="https://yhist.github.io/jeongyookgak/"
-                      target="_blank"
-                      >work</a
-                    >
-                    <a
-                      href="https://github.com/yhist/jeongyookgak"
-                      target="_blank"
-                      >github</a
-                    >
-                    <a href="https://www.jeongyookgak.com/index" target="_blank"
-                      >origin</a
-                    >
-                  </div>
-                </li>
-              </ul>
-            </div>
 
-            <div class="portfolio-cate">
-              <h4>Study Clone</h4>
-              <ul class="portfolio-list">
-                <li>
-                  <h5>K-Water(PC/Mobile)</h5>
-                  <a href="https://yhist.github.io/K-water/" target="_blank">
-                    <img src="http://placeimg.com/400/360/any" alt="사이트명" />
-                  </a>
-                  <div class="">
-                    <a href="https://yhist.github.io/K-water/" target="_blank"
-                      >work</a
-                    >
-                    <a href="https://github.com/yhist/K-water" target="_blank"
-                      >github</a
-                    >
-                    <a
-                      href="https://www.kwater.or.kr/main.do?s_mid=1"
-                      target="_blank"
-                      >origin</a
-                    >
-                  </div>
-                </li>
-                <li>
-                  <h5>거제청년이룸(PC/Mobile/vue.js)</h5>
-                  <a href="http://localhost:8080/page-geoje/" target="_blank">
-                    <img src="http://placeimg.com/400/360/any" alt="사이트명" />
-                  </a>
-                  <div class="">
-                    <a
-                      href="https://yhist.github.io/geojeyouth/"
-                      target="_blank"
-                      >work</a
-                    >
-                    <a
-                      href="https://github.com/yhist/geojeyouth"
-                      target="_blank"
-                      >github</a
-                    >
+        <div class="skill">
+          <h2>SKILL</h2>
+          <div class="skill-box">
+            <h3>PROGRAM SKILL</h3>
+            <ul class="program-skill">
+              <li id="html"></li>
+              <li id="css"></li>
+              <li id="js"></li>
+              <li id="jquery"></li>
+              <li id="scss"></li>
+              <li id="vue"></li>
 
-                    <a href="http://localhost:8080/page-geoje/" target="_blank"
-                      >vue.js work</a
-                    >
-                    <a
-                      href="https://github.com/yhist/page-geoje"
-                      target="_blank"
-                      >vue.js github</a
-                    >
-
-                    <a href="https://geojeyouth.com/web/" target="_blank"
-                      >origin</a
-                    >
-                  </div>
-                </li>
-                <li>
-                  <h5>노엘로힐스(PC/Mobile/vue.js)</h5>
-                  <a href="https://yhist.github.io/page-noelo/" target="_blank">
-                    <img src="http://placeimg.com/400/360/any" alt="사이트명" />
-                  </a>
-                  <div class="">
-                    <a
-                      href="https://yhist.github.io/noelohills/"
-                      target="_blank"
-                      >work</a
-                    >
-                    <a
-                      href="https://github.com/yhist/noelohills"
-                      target="_blank"
-                      >github</a
-                    >
-
-                    <a
-                      href="https://yhist.github.io/page-noelo/"
-                      target="_blank"
-                      >vue.js work</a
-                    >
-                    <a href="https://github.com/yhist/vuenoelo" target="_blank"
-                      >vue.js github</a
-                    >
-
-                    <a href="https://noelohills.com/" target="_blank">origin</a>
-                  </div>
-                </li>
-                <li>
-                  <h5>마시그레이(PC/Mobile/vue.js)</h5>
-                  <a href="https://yhist.github.io/page-masi/" target="_blank">
-                    <img src="http://placeimg.com/400/360/any" alt="사이트명" />
-                  </a>
-                  <div class="">
-                    <a href="https://yhist.github.io/masigray/" target="_blank"
-                      >work</a
-                    >
-                    <a href="https://github.com/yhist/masigray" target="_blank"
-                      >github</a
-                    >
-
-                    <a href="https://yhist.github.io/page-masi/" target="_blank"
-                      >vue.js work</a
-                    >
-                    <a href="https://github.com/yhist/page-masi" target="_blank"
-                      >vue.js github</a
-                    >
-
-                    <a
-                      href="https://www.masigray.com:5021/main/main.asp"
-                      target="_blank"
-                      >origin</a
-                    >
-                  </div>
-                </li>
-                <li>
-                  <h5>STX 건설(PC/Vue.js)</h5>
-                  <a href="https://yhist.github.io/stxconst/" target="_blank">
-                    <img src="http://placeimg.com/400/360/any" alt="사이트명" />
-                  </a>
-                  <div class="">
-                    <a href="https://yhist.github.io/stxconst/" target="_blank"
-                      >work</a
-                    >
-                    <a href="https://github.com/yhist/stxconst" target="_blank"
-                      >github</a
-                    >
-
-                    <a href="https://yhist.github.io/page-stx/" target="_blank"
-                      >vue.js work</a
-                    >
-                    <a href="https://github.com/yhist/page-stx" target="_blank"
-                      >vue.js github</a
-                    >
-
-                    <a href="http://www.stxconst.co.kr/" target="_blank"
-                      >origin</a
-                    >
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="portfolio-wrap">
-            <h3>Vue.js Coding</h3>
-            <div class="portfolio-cate">
-              <h4>study Vue.js</h4>
-              <ul class="portfolio-list">
-                <li>
-                  <h5>MiniMemo(Vue.js)</h5>
-                  <p>프로젝트 설명</p>
-                  <a href="깃허브 vue.js page주소" target="_blank"
-                    >vue.js work</a
-                  >
-                  <a href="깃허브 vue.js 주소" target="_blank">vue.js github</a>
-                  <a href="피그마 링크주소" target="_blank">Figma</a>
-                </li>
-                <li>
-                  <h5>지브리 스튜디오 API(Vue.js/ php / Mysql)</h5>
-                  <p>프로젝트 설명</p>
-                  <a href="dothom 계정주소" target="_blank">vue.js work</a>
-                  <a href="깃허브 vue.js 주소" target="_blank">vue.js github</a>
-                  <a href="피그마 링크주소" target="_blank">Figma</a>
-                </li>
-                <li>
-                  <h5>TodoApp(Vue.js/RESRFULL(jsonServer))</h5>
-                  <p>프로젝트 설명</p>
-                  <a href="dothom 계정주소" target="_blank">vue.js work</a>
-                  <a href="깃허브 vue.js 주소" target="_blank">vue.js github</a>
-                  <a href="피그마 링크주소" target="_blank">Figma</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="portfolio-wrap">
-            <h3>Etc Coding</h3>
+            </ul>
+            <h3>COMMUNICATION SKILL</h3>
+            <ul class="communication-skill">
+              <li id="figma"></li>
+              <li id="github"></li>
+              <li id="notion"></li>
+            </ul>
           </div>
         </div>
-      </section>
-      <section class="life" id="life">
-        <div class="inner">
-          <h2>life</h2>
+      </div>
+    </section>
+
+
+    <section class="possibility" id="possibility">
+      <div class="inner">
+        <h2>POSSIBILITY</h2>
+        <div class="possibility-list">
+          <div class="possibility-list1" data-aos="fade-down">
+            <span>책임감</span>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo quibusdam quisquam iste doloribus, dolorem
+              perferendis laboriosam. Consequuntur velit ab sapiente maiores quasi a, id quam! Nemo laborum maxime sed
+              facere!</p>
+          </div>
+          <div class="possibility-list2" data-aos="fade-right">
+            <span>의사소통</span>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo quibusdam quisquam iste doloribus, dolorem
+              perferendis laboriosam. Consequuntur velit ab sapiente maiores quasi a, id quam! Nemo laborum maxime sed
+              facere!</p>
+          </div>
+          <div class="possibility-list3" data-aos="fade-left">
+            <span>노력</span>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo quibusdam quisquam iste doloribus, dolorem
+              perferendis laboriosam. Consequuntur velit ab sapiente maiores quasi a, id quam! Nemo laborum maxime sed
+              facere!</p>
+          </div>
+          <div class="possibility-list4" data-aos="fade-right">
+            <span>도전정신</span>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo quibusdam quisquam iste doloribus, dolorem
+              perferendis laboriosam. Consequuntur velit ab sapiente maiores quasi a, id quam! Nemo laborum maxime sed
+              facere!</p>
+          </div>
+          <div class="possibility-list5" data-aos="fade-left">
+            <span>전문성</span>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo quibusdam quisquam iste doloribus, dolorem
+              perferendis laboriosam. Consequuntur velit ab sapiente maiores quasi a, id quam! Nemo laborum maxime sed
+              facere!</p>
+          </div>
+          <div class="possibility-chart">
+            <canvas id="myChart"></canvas>
+          </div>
         </div>
-      </section>
-      <section class="contact" id="contact">
-        <div class="inner">
-          <h2>contact</h2>
+      </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <h2>PORTFOLIO</h2>
+      <div class="portfolio-wrap">
+        <h3>Clone Coding</h3>
+        <div class="portfolio-cate">
+          <div class="swiper-container sw-portfolio">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide portfolio-list">
+                <h5>거제청년이룸 <br>
+                  ( <i class="fas fa-desktop"> </i> /
+                  <i class="fas fa-mobile-alt"> </i> /
+                  <i class="fab fa-vuejs"></i> )
+                </h5>
+                <a href="http://localhost:8080/page-geoje/" target="_blank">
+                  <img src="images/geojeyouth -page.png" alt="거제청년이룸" />
+                </a>
+                <div class="portfolio-link">
+                  <a href="https://geojeyouth.com/web/" target="_blank">origin</a>
+                  <a href="https://yhist.github.io/geojeyouth/" target="_blank">work</a>
+                  <a href="https://github.com/yhist/geojeyouth" target="_blank">github</a>
+                  <a href="http://localhost:8080/page-geoje/" target="_blank">vue.js work</a>
+                  <a href="https://github.com/yhist/page-geoje" target="_blank">vue.js github</a>
+                </div>
+              </li>
+              <li class="swiper-slide portfolio-list">
+                <h5>K-Water <br>
+                  ( <i class="fas fa-desktop"> </i> /
+                  <i class="fas fa-mobile-alt"> </i> )
+                </h5>
+                <a href="https://yhist.github.io/K-water/" target="_blank">
+                  <img src="images/k-water-page.png" alt="K-water" />
+                </a>
+                <div class="portfolio-link">
+                  <a href="https://www.kwater.or.kr/main.do?s_mid=1" target="_blank">origin</a>
+                  <a href="https://yhist.github.io/K-water/" target="_blank">work</a>
+                  <a href="https://github.com/yhist/K-water" target="_blank">github</a>
+                </div>
+              </li>
+              <li class="swiper-slide portfolio-list">
+                <h5>노엘로힐스 <br>
+                  ( <i class="fas fa-desktop"> </i> /
+                  <i class="fas fa-mobile-alt"> </i> /
+                  <i class="fab fa-vuejs"></i> )
+                </h5>
+                <a href="https://yhist.github.io/page-noelo/" target="_blank">
+                  <img src="images/noelo-page.png" alt="노엘로힐스" />
+                </a>
+                <div class="portfolio-link">
+                  <a href="https://noelohills.com/" target="_blank">origin</a>
+                  <a href="https://yhist.github.io/noelohills/" target="_blank">work</a>
+                  <a href="https://github.com/yhist/noelohills" target="_blank">github</a>
+                  <a href="https://yhist.github.io/page-noelo/" target="_blank">vue.js work</a>
+                  <a href="https://github.com/yhist/vuenoelo" target="_blank">vue.js github</a>
+                </div>
+              </li>
+              <li class="swiper-slide portfolio-list">
+                <h5>마시그레이 <br>
+                  ( <i class="fas fa-desktop"> </i> /
+                  <i class="fas fa-mobile-alt"> </i> /
+                  <i class="fab fa-vuejs"></i> )
+                </h5>
+                <a href="https://yhist.github.io/page-masi/" target="_blank">
+                  <img src="images/masigray-page.png" alt="마시그레이" />
+                </a>
+                <div class="portfolio-link">
+                  <a href="https://yhist.github.io/masigray/" target="_blank">work</a>
+                  <a href="https://github.com/yhist/masigray" target="_blank">github</a>
+                  <a href="https://yhist.github.io/page-masi/" target="_blank">vue.js work</a>
+                  <a href="https://github.com/yhist/page-masi" target="_blank">vue.js github</a>
+                  <a href="https://www.masigray.com:5021/main/main.asp" target="_blank">origin</a>
+                </div>
+              </li>
+              <li class="swiper-slide portfolio-list">
+                <h5>leeumstore <br>
+                  ( <i class="fas fa-desktop"> </i> /
+                  <i class="fas fa-mobile-alt"> </i> )
+                </h5>
+                <a href="https://yhist.github.io/leeumstore/" target="_blank" class="aaa">
+                  <img src="images/leeum-page.png" alt="리움스토어" class="leeumstore" />
+                </a>
+                <div class="portfolio-link">
+                  <a href="https://yhist.github.io/leeumstore/" target="_blank">work</a>
+                  <a href="https://github.com/yhist/leeumstore" target="_blank">github</a>
+                  <a href="http://leeumstore.org/" target="_blank">origin</a>
+                </div>
+              </li>
+              <li class="swiper-slide portfolio-list">
+                <h5>정육각 <br>
+                  ( <i class="fas fa-desktop"> </i> /
+                  <i class="fas fa-mobile-alt"> </i> )
+                </h5>
+                <a href="https://yhist.github.io/jeongyookgak/" target="_blank">
+                  <img src="images/jeongyookgak-page.png" alt="정육각" />
+                </a>
+                <div class="portfolio-link">
+                  <a href="https://www.jeongyookgak.com/index" target="_blank">origin</a>
+                  <a href="https://yhist.github.io/jeongyookgak/" target="_blank">work</a>
+                  <a href="https://github.com/yhist/jeongyookgak" target="_blank">github</a>
+                </div>
+              </li>
+
+              <li class="swiper-slide portfolio-list">
+                <h5>STX 건설 <br>
+                  ( <i class="fas fa-desktop"> </i> /
+                  <i class="fab fa-vuejs"></i> )
+                </h5>
+                <a href="https://yhist.github.io/stxconst/" target="_blank">
+                  <img src="images/stx-page.png" alt="STX 건설" />
+                </a>
+                <div class="portfolio-link">
+                  <a href="http://www.stxconst.co.kr/" target="_blank">origin</a>
+                  <a href="https://yhist.github.io/stxconst/" target="_blank">work</a>
+                  <a href="https://github.com/yhist/stxconst" target="_blank">github</a>
+                  <a href="https://yhist.github.io/page-stx/" target="_blank">vue.js work</a>
+                  <a href="https://github.com/yhist/page-stx" target="_blank">vue.js github</a>
+                </div>
+              </li>
+            </ul>
+            <div class="swiper-pagination"></div>
+            <!-- <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div> -->
+          </div>
         </div>
-      </section>
-      <footer class="footer">
-        <div class="inner"></div>
-      </footer>
-    </div>
-  </body>
+      </div>
+
+      <!-- <div class="portfolio-wrap">
+        <h3>Vue.js Coding</h3>
+        <div class="portfolio-cate">
+          <h4>study Vue.js</h4>
+          <ul class="portfolio-list">
+            <li>
+              <h5>MiniMemo(Vue.js)</h5>
+              <p>프로젝트 설명</p>
+              <a href="깃허브 vue.js page주소" target="_blank">vue.js work</a>
+              <a href="깃허브 vue.js 주소" target="_blank">vue.js github</a>
+              <a href="피그마 링크주소" target="_blank">Figma</a>
+            </li>
+            <li>
+              <h5>지브리 스튜디오 API(Vue.js/ php / Mysql)</h5>
+              <p>프로젝트 설명</p>
+              <a href="dothom 계정주소" target="_blank">vue.js work</a>
+              <a href="깃허브 vue.js 주소" target="_blank">vue.js github</a>
+              <a href="피그마 링크주소" target="_blank">Figma</a>
+            </li>
+            <li>
+              <h5>TodoApp(Vue.js/RESRFULL(jsonServer))</h5>
+              <p>프로젝트 설명</p>
+              <a href="dothom 계정주소" target="_blank">vue.js work</a>
+              <a href="깃허브 vue.js 주소" target="_blank">vue.js github</a>
+              <a href="피그마 링크주소" target="_blank">Figma</a>
+            </li>
+          </ul>
+        </div>
+      </div> -->
+
+      <!--       
+      <div class="portfolio-wrap">
+        <h3>Vue.js Coding</h3>
+        <div class="portfolio-cate">
+          <h4>study Vue.js</h4>
+          <ul class="portfolio-list">
+            <li>
+              <h5>MiniMemo(Vue.js)</h5>
+              <p>프로젝트 설명</p>
+              <a href="깃허브 vue.js page주소" target="_blank">vue.js work</a>
+              <a href="깃허브 vue.js 주소" target="_blank">vue.js github</a>
+              <a href="피그마 링크주소" target="_blank">Figma</a>
+            </li>
+            <li>
+              <h5>지브리 스튜디오 API(Vue.js/ php / Mysql)</h5>
+              <p>프로젝트 설명</p>
+              <a href="dothom 계정주소" target="_blank">vue.js work</a>
+              <a href="깃허브 vue.js 주소" target="_blank">vue.js github</a>
+              <a href="피그마 링크주소" target="_blank">Figma</a>
+            </li>
+            <li>
+              <h5>TodoApp(Vue.js/RESRFULL(jsonServer))</h5>
+              <p>프로젝트 설명</p>
+              <a href="dothom 계정주소" target="_blank">vue.js work</a>
+              <a href="깃허브 vue.js 주소" target="_blank">vue.js github</a>
+              <a href="피그마 링크주소" target="_blank">Figma</a>
+            </li>
+          </ul>
+        </div>
+      </div> -->
+
+
+      <div class="vue-port">
+        <div class="inner">
+          <div class="vue-port-left">
+            <h3>Vue Study</h3>
+          </div>
+          <div class="vue-port-right">
+            <ul>
+              <li class="vue-item1">
+                <div class="vue-info">
+                  <div class="vue-info-txt">
+                    <span>지브리</span>
+                    <p>공공API 연동</p>
+                  </div>
+                  <div class="vue-info-link">
+                    <a href="#">Page</a>
+                    <a href="#">Github</a>
+                  </div>
+                </div>
+              </li>
+              <li class="vue-item2">
+                <div class="vue-info">
+                  <div class="vue-info-txt">
+                    <span>지브리</span>
+                    <p>공공API 연동</p>
+                  </div>
+                  <div class="vue-info-link">
+                    <a href="#">Page</a>
+                    <a href="#">Github</a>
+                  </div>
+                </div>
+              </li>
+              <li class="vue-item3">
+                <div class="vue-info">
+                  <div class="vue-info-txt">
+                    <span>지브리</span>
+                    <p>공공API 연동</p>
+                  </div>
+                  <div class="vue-info-link">
+                    <a href="#">Page</a>
+                    <a href="#">Github</a>
+                  </div>
+                </div>
+              </li>
+              <li class="vue-item4">
+                <div class="vue-info">
+                  <div class="vue-info-txt">
+                    <span>지브리</span>
+                    <p>공공API 연동</p>
+                  </div>
+                  <div class="vue-info-link">
+                    <a href="#">Page</a>
+                    <a href="#">Github</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- <div class="portfolio-wrap">
+          <h3>Etc Coding</h3>
+        </div> -->
+    </section>
+
+
+    <section class="life" id="life">
+      <div class="inner">
+        <h2>life</h2>
+      </div>
+    </section>
+
+
+    <section class="vision" id="vision">
+      <div class="inner">
+        <div class="vision-left">
+          <img src="images/vision-pic.jpeg" alt="">
+        </div>
+        <div class="vision-right">
+          <div class="vision-title">
+            <h2>STEP FORWARD</h2>
+          </div>
+          <div class="vision-txt">
+            <ul>
+              <li>
+                <h4>1년 후 저는 ~~한 개발자입니다.</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque velit officiis culpa quod
+                  consequuntur ducimus rerum rem natus maxime quasi repudiandae, maiores quia recusandae amet quibusdam
+                  cum nobis quo sequi!</p>
+              </li>
+              <li>
+                <h4>3년 후 저는 ~~한 개발자입니다.</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quae voluptatum at! Rem nam, a
+                  esse culpa quod, reiciendis numquam facere eos eveniet voluptatem minima natus ullam eaque, at
+                  aliquid!</p>
+              </li>
+              <li>
+                <h4>5년 후 저는 ~~한 개발자입니다.</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In molestias magni sapiente sequi inventore
+                  fugit, nulla fuga officia quae saepe et neque omnis nostrum possimus similique, velit quaerat minus
+                  aperiam?</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <footer class="footer">
+      <div class="inner">
+        <div class="footer-box">
+          <div class="footer-box1">
+            <div class="f-pic">
+              <!-- <img src="images/footer-selfi.png" alt=""> -->
+            </div>
+            <div class="f-contect">
+
+              <span>Email : </span>
+              <a href="">ehdusgml0903@naver.com</a>
+              <span></span>
+            </div>
+          </div>
+          <div class="footer-box2">
+            <span>Thanks for stopping by!</span>
+            <div></div>
+            <!-- <p>© 2022. DOYEONHEE All rights reserved.</p> -->
+          </div>
+          <div class="footer-box3">
+            <span>CONTECT ME!</span>
+            <div class="kakao">
+              <img src="" alt="">
+              <span>ID : dyh0903</span>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="f-logo"></div>
+          <span>© 2022. DOYEONHEE All rights reserved.</span>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+</body>
+
 </html>
