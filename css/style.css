@@ -72,11 +72,15 @@ body {
   margin-top: 5px;
   font-size: 25px;
   color: #444;
+  cursor: pointer;
+}
+.sns-menu-list > .fa-times {
+  margin-right: 8px;
 }
 
 .sns-menu-list ul {
   position: absolute;
-  right: 0;
+  right: 3px;
   bottom: 100%;
   display: flex;
   flex-direction: column;
@@ -96,6 +100,18 @@ body {
 .sns-menu-list ul li a:hover {
   transform: scale(1.1);
   color: #444;
+}
+
+.go-top {
+  position: fixed;
+  right: 28px;
+  bottom: 30px;  
+  z-index: 9999;
+}
+
+.go-top i {
+  font-size: 22px;
+  cursor: pointer;
 }
 
 
@@ -432,52 +448,20 @@ body {
   font-size: 40px;
 }
 
-.skill {
-position: relative;
-display: block;
-width: 40%;
-height: 45%;
+.profile h3 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  /* text-align: center; */
+  text-decoration: underline;
+  text-decoration-color: #c7d4c6;
+  text-underline-position: under;
 }
-
-.skill h2 {
-  position: relative;
-  font-family: 'Shadows Into Light';
-  font-size: 40px;
-}
-
-.skill-box {
-position: relative;
-}
-
-.program-skill {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.program-skill li {
-  position: relative;
-  width: 30%;
-  margin: 10px 0;
-}
-
-.communication-skill {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.communication-skill li {
-  position: relative;
-  width: 30%;
-  margin: 10px 0;}
 
 .profile-text {
-  /* position: absolute;
-  top: 50%;
-  right: 0%;
-  transform: translateY(-50%); */
   width: 45%;
-  display: block;  
+  display: block; 
+  margin-left: 20px; 
 }
 
 .profile-text-list {
@@ -493,16 +477,6 @@ position: relative;
   white-space: nowrap;
 }
 
-.profile-text-list h3 {
-  font-size: 20px;
-  font-weight: 500;
-  margin-bottom: 20px;
-  /* text-align: center; */
-  text-decoration: underline;
-  text-decoration-color: #c7d4c6;
-  text-underline-position: under;
-}
-
 .profile-text-list span {
   position: relative;
   display: inline-block;
@@ -513,12 +487,56 @@ position: relative;
   letter-spacing: 1px;
   margin-right: 10px;
 }
+
 .profile-text-list  p {
   position: relative;
   display: inline-block;
   letter-spacing: 1px;
-
 }
+
+.skill {
+  position: relative;
+  display: block;
+  width: 45%;
+  height: 45%;
+  }
+  
+  .skill h2 {
+    position: relative;
+    font-family: 'Shadows Into Light';
+    font-size: 40px;
+  }
+  
+  .skill-box {
+  position: relative;
+  /* margin: 20px 0; */
+  }
+  
+  .program-skill {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .progressbar-text {
+    text-align: center;
+  }
+  
+  .program-skill li {
+    position: relative;
+    width: 30%;
+    margin: 10px 0;
+  }
+  
+  .communication-skill {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .communication-skill li {
+    position: relative;
+    width: 30%;
+    margin: 10px 0;}
 
 
 /* possibility 영역 */
@@ -562,7 +580,6 @@ position: relative;
   left: 5%;
   width: 400px;
   font-size: 13px;
-  color: #fafad2;
 }
 
 .possibility-list3 {
@@ -862,8 +879,52 @@ position: relative;
 }
 
 
+/* 컨텍트 영역 */
+.vision {
+  position: relative;
+  display: block;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
 
+.vision .inner {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
 
+.vision-left {
+  position: relative;
+  display: block;
+  width: 45%;
+  padding: 20px;
+  margin-left: 40px;
+}
+
+.vision-left img {
+  width: 400px;
+  height: 570px;
+}
+
+.vision-right {
+  position: relative;
+  display: block;
+  width: 45%;
+  padding: 20px;
+}
+
+.vision-right h2 {
+  font-size: 28px;
+}
+
+.vision-title {}
+
+.vision-txt {}
+.vision-txt ul {}
+.vision-txt ul li {
+  margin: 40px 0;
+}
 
 /* 라이프 영역 */
 .life {
@@ -877,48 +938,6 @@ position: relative;
 
 }
 
-/* 컨텍트 영역 */
-.vision {
-  position: relative;
-  display: block;
-  margin: 30px;
-}
-
-.vision .inner {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-}
-
-.vision-left {
-  position: relative;
-  display: block;
-  width: 45%;
-  padding: 20px;
-}
-
-.vision-left img {
-  width: 400px;
-  height: 570px;
-}
-
-.vision-right {
-
-  position: relative;
-  display: block;
-  width: 45%;
-  padding: 20px;
-
-}
-
-.vision-title {}
-
-.vision-txt {}
-.vision-txt ul {}
-.vision-txt ul li {
-  margin: 40px 0;
-}
 
 /* 푸터 영역 */
 .footer {
@@ -943,13 +962,14 @@ position: relative;
 .footer-box1 {
   position: relative;
   display: block;
-  padding: 15px;
+  padding: 20px;
 }
 .footer-box1 .f-pic {
   position: relative;
   display: block;
   width: 195px;
   height: 210px;
+  margin-bottom: 10px;
   background: url('../images/footer-selfi.jpeg') no-repeat center;
   background-size: cover;
 }
@@ -966,9 +986,28 @@ position: relative;
 
 .footer-box3 {
   padding: 15px;
-
 }
-.footer-box3 .kakao {}
+
+.footer-box3 > span {
+  font-size: 18px;
+  color: #666;
+}
+.footer-box3 .kakao {
+  padding: 10px;
+  margin: 10px 0;
+  width: 120px;
+  height: 120px;
+}
+
+.footer-box3 .kakao img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 8px;
+}
+
+.footer-box3 .kakao > span {
+  font-size: 15px;
+}
 
 .footer-bottom {
   margin-top: 55px;

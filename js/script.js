@@ -14,6 +14,15 @@ window.onload = function () {
       snsMenuOpen.addClass('fa-ellipsis-h');
       snsMenuOpen.removeClass('fa-times');
     }
+  });
+
+  // 위로가기
+  let goTop = $('.go-top');
+  goTop.click(function () {
+    scrollTo({
+      top: 0,
+      behavior: "smooth",
+    })
   })
 
   // 화면이동시 커서 유지
@@ -53,7 +62,6 @@ window.onload = function () {
     })
   })
 
-
   new Swiper(".sw-about", {
     slidesPerView: 1,
     direction: "vertical",
@@ -65,24 +73,34 @@ window.onload = function () {
   });
 
 
+  // 프로필 페이지 도착시 프로그래스바 실행
+  let profile = $('.profile');
+  new Waypoint({
+    element: profile,
+    handler: function (direction) {
+      barAni(); 
+    },
+    offset: '70%',
+  });
+
   function makeCircle(_id, _str, _startColor, _endColor) {
     let bar = new ProgressBar.Circle(_id, {
       color: "#777",
-      strokeWidth: 5,
+      strokeWidth: 10,
       trailWidth: 5,
       easing: "easeOut",
-      duration: 1400,
+      duration: 2500,
 
       text: {
         autoStyleContainer: false,
       },
       from: {
         color: _startColor,
-        width: 5,
+        width: 3,
       },
       to: {
         color: _endColor,
-        width: 5,
+        width: 6,
       },
       step: function (state, circle) {
         circle.path.setAttribute("stroke", state.color);
@@ -102,30 +120,28 @@ window.onload = function () {
     return bar;
   }
 
-  let html = makeCircle(html, "HTML", "#fafad2", "#e8a9a2");
-  let css = makeCircle(css, "CSS", "#fafad2", "#e8a9a2");
-  let js = makeCircle(js, "JS", "#fafad2", "#e8a9a2");
-  let jquery = makeCircle(jquery, "JQuery", "#fafad2", "#e8a9a2");
-  let scss = makeCircle(scss, "SCSS", "#fafad2", "#e8a9a2");
-  let vue = makeCircle(vue, "Vue.js", "#fafad2", "#e8a9a2");
-  let figma = makeCircle(figma, "Figma", "#fafad2", "#e8a9a2");
-  let github = makeCircle(github, "Github", "#fafad2", "#e8a9a2");
-  let notion = makeCircle(notion, "Notion", "#fafad2", "#e8a9a2");
+  let bar_html = makeCircle(html, "HTML", "#fafad2", "#e8a9a2");
+  let bar_css = makeCircle(css, "CSS", "#fafad2", "#e8a9a2");
+  let bar_js = makeCircle(js, "JS", "#fafad2", "#e8a9a2");
+  let bar_jquery = makeCircle(jquery, "JQuery", "#fafad2", "#e8a9a2");
+  let bar_scss = makeCircle(scss, "SCSS", "#fafad2", "#e8a9a2");
+  let bar_vue = makeCircle(vue, "Vue.js", "#fafad2", "#e8a9a2");
+  let bar_figma = makeCircle(figma, "Figma", "#fafad2", "#e8a9a2");
+  let bar_github = makeCircle(github, "Github", "#fafad2", "#e8a9a2");
+  let bar_notion = makeCircle(notion, "Notion", "#fafad2", "#e8a9a2");
 
   
   let barAni = () => {
-    html.animate(0.95);
-    css.animate(0.91);
-    js.animate(0.72);
-    jquery.animate(0.78);
-    scss.animate(0.8);
-    vue.animate(0.7);
-    figma.animate(0.9);
-    github.animate(0.9);
-    notion.animate(0.9);
+    bar_html.animate(0.95);
+    bar_css.animate(0.9);
+    bar_js.animate(0.75);
+    bar_jquery.animate(0.8);
+    bar_scss.animate(0.8);
+    bar_vue.animate(0.75);
+    bar_figma.animate(0.93);
+    bar_github.animate(0.85);
+    bar_notion.animate(0.95);
   };
-
-  barAni();
 
 
 
@@ -191,7 +207,7 @@ window.onload = function () {
     centeredSlides: true,
     loop: true,
     autoplay: {
-      delay: 1000000000,
+      delay: 3100,
     },
     loopFillGroupWithBlank: true,
     pagination: {
