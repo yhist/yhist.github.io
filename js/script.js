@@ -154,7 +154,7 @@ window.onload = function () {
               label: 'possibility',
               data: [97, 90, 95, 93, 100],
               backgroundColor: [
-                  'rgba(217, 217, 217, 0.2)',
+                  'rgba(217, 217, 217, 0.5)',
               ],
               borderColor: [
                   'rgba(217, 217, 217, 1)',
@@ -174,14 +174,14 @@ window.onload = function () {
               r: {
                   pointLabels: {
                       font: {
-                          size: 20,
-                          family: 'GangwonEdu_OTFBoldA',
+                          size: 22,
+                          family: 'Noto Sans KR',
                       },
-                      color: 'rgb(250, 206, 199, 0.7)'
+                      color: 'rgb(239, 161, 160, 0.7)'
                   },
                   beginAtZero: true,
                   grid: {
-                    color: 'rgba(222, 185, 146, 0.4)',
+                    color: 'rgba(222, 185, 146, 0.5)',
                 },
                 angleLines: {
                     color: 'rgba(222, 185, 146, 0.4)'
@@ -207,7 +207,7 @@ window.onload = function () {
     centeredSlides: true,
     loop: true,
     autoplay: {
-      delay: 3100,
+      delay: 310000000000,
     },
     loopFillGroupWithBlank: true,
     pagination: {

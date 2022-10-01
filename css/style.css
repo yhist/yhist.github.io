@@ -2,6 +2,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@400;700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Shadows+Into+Light&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+@font-face {
+  font-family: "Cocogoose Classic";
+  src: url(../fonts/cocogoose_classic/Cocogoose-Classic-Medium-trial.ttf);
+}
+@font-face {
+  font-family: "Sacred Valley";
+  src: url(../fonts/sacred_valley/Sacred\ Valley.ttf);
+}
+@font-face {
+  font-family: "Floane";
+  src: url(../fonts/floane/Floane-Regular.otf);
+  /* src: url(../fonts/floane/Floane-Bold.otf); */
+}
+@font-face {
+  font-family: "bright_gesture";
+  src: url(../fonts/bright_gesture/Bright\ Gesture\ DEMO.otf);
+  /* src: url(../fonts/floane/Floane-Bold.otf); */
+}
+@font-face {
+  font-family: 'GyeonggiTitleVertical';
+  font-weight: normal;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/gyeonggi/GyeonggiTitleVertical.eot');
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/gyeonggi/GyeonggiTitleVertical.eot?#iefix') format('embedded-opentype'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/gyeonggi/GyeonggiTitleVertical.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/gyeonggi/GyeonggiTitleVertical.woff') format('woff'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/gyeonggi/GyeonggiTitleVertical.ttf') format("truetype");
+  font-display: swap;
+}
 
 
 * {
@@ -330,7 +359,9 @@ body {
 }
 .about .inner h2 {
   text-align: center;
-  font-family: 'Shadows Into Light';
+  font-family: 'GyeonggiTitleVertical';
+  color: white;
+  text-shadow: 1px 1px 4px #666;
   font-size: 60px;
 }
 
@@ -438,14 +469,15 @@ body {
 .profile .inner {
   position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   height: 760px;
 }
 
 .profile .inner h2 {
-  font-family: 'Shadows Into Light';
+  font-family: 'GyeonggiTitleVertical';
   font-size: 40px;
+  margin-bottom: 35px;
 }
 
 .profile h3 {
@@ -464,24 +496,29 @@ body {
   margin-left: 20px; 
 }
 
+
 .profile-text-list {
   position: relative;
   display: flex;
   flex-wrap: wrap;
+  margin-left: 25px;
   width: 100%;
 }
 
 .profile-text-list >li {
   width: 60%;
-  margin: 25px 0;
+  margin-bottom: 50px;
   white-space: nowrap;
+}
+.profile-text-list >li li {
+  margin: 7px 0;
 }
 
 .profile-text-list span {
   position: relative;
   display: inline-block;
   width: 70px;
-  color: #1E445B;
+  color: #f79c92;
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 1px;
@@ -503,19 +540,21 @@ body {
   
   .skill h2 {
     position: relative;
-    font-family: 'Shadows Into Light';
+    font-family: 'GyeonggiTitleVertical';
     font-size: 40px;
+    margin-bottom: 25px;
   }
   
   .skill-box {
   position: relative;
-  /* margin: 20px 0; */
+  margin-left: 25px;
   }
   
   .program-skill {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 90%;
   }
   
   .progressbar-text {
@@ -532,6 +571,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 90%;
   }
   .communication-skill li {
     position: relative;
@@ -549,70 +589,51 @@ body {
 .possibility .inner {
   position: relative;
   width: 100%;
-  height: 760px;
+  /* height: 760px; */
 }
 
 .possibility .inner h2 {
-  font-family: 'Shadows Into Light';
+  font-family: 'GyeonggiTitleVertical';
   text-align: center;
   display: block;
   font-size: 40px;
 }
-
-.possibility-list {
+.possibility-box {
   position: relative;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-.possibility-list1 {
-  position: absolute;
-  top: 13%;
-  left: 40%;
-  width: 400px;
-  font-size: 13px;
-}
-
-.possibility-list2 {
-  position: absolute;
-  top: 33%;
-  left: 5%;
-  width: 400px;
-  font-size: 13px;
-}
-
-.possibility-list3 {
-  position: absolute;
-  top: 33%;
-  right: 0;
-  width: 400px;
-  font-size: 13px;
-}
-
-.possibility-list4 {
-  position: absolute;
-  bottom: 25%;
-  left: 9%;
-  width: 400px;
-  font-size: 13px;
-}
-
-.possibility-list5 {
-  position: absolute;
-  bottom: 20%;
-  right: 6%;
-  width: 400px;
-  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
 }
 
 .possibility-chart{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
+  width: 40%;
   display: block;
+  margin-left: 5%;
+  padding-top: 5%;
 }
+
+#myChart {
+  width: 360px;
+  box-sizing: content-box;
+}
+
+.possibility-txt {
+  position: relative;
+  display: block;
+  width: 55%;
+}
+.possibility-txt li {
+  margin-bottom: 25px;
+}
+
+.possibility-list span {
+  font-size: 18px;
+}
+.possibility-list p {
+  font-size: 15px;
+}
+
 
 
 /* 포트폴리오 영역 */
@@ -623,10 +644,9 @@ body {
 }
 
 .portfolio h2 {
-  font-family: 'Shadows Into Light';
+  font-family: 'GyeonggiTitleVertical';
   text-align: center;
   font-size: 40px;
-  /* font-weight: 600; */
 }
 
 .portfolio-wrap {
@@ -635,29 +655,26 @@ body {
 
 .portfolio h3 {
   text-align: center;
-  font-size: 25px;
+  font-size: 20px;
   color: rgb(101, 99, 99);
-  font-weight: 600;
-  margin: 20px 0;
+  margin: 0 0 20px 0;
 }
 
 .portfolio-cate {
   position: relative;
   display: block;
-  margin: 20px 0;
-  width: 85%;
+  width: 89%;
   margin: 0 auto;
   margin-top: 35px;
-  padding: 40px;
   background-color: #fff;
 }
 
 .portfolio h5 {
   position: absolute;
-  top: 0;
+  top: 3%;
   left: 20%;
   text-align: center;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 400;
   color: rgb(102, 99, 99);
   z-index: 1;
@@ -668,19 +685,22 @@ body {
   height: 100%;
 }
 
+.port-img{
+  width: 100%;
+}
+
 .sw-portfolio .swiper-wrapper {
   position: relative;
   /* display: block; */
   font-size: 0;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .portfolio-list {
   position: relative;
   display: inline-block;
+  margin-left: 1.3%;
   width: 33%;
-  margin-right: 3%;
-  /* text-align: center; */
   transform: scale(0.75);
   transition: all 0.5s;
   opacity: 0.5;
@@ -693,11 +713,26 @@ body {
 
 .swiper-slide-active .portfolio-link {
   opacity: 1;
-  margin-top: 40px;
 }
 
 .portfolio-link {
+  display: flex;
+  flex-wrap: wrap;
   opacity: 0;
+  margin-top: 30px;
+}
+
+.portfolio-link a {
+  position: relative;
+  display: inline-block;
+  width: 25%;
+  text-align: center;
+  padding: 5px;
+  margin: 0 3% 2% 0;
+  font-size: 18px;
+  white-space: nowrap;
+  border: 1px solid #daebd9;
+  border-radius: 10px;
 }
 
 /* 
@@ -722,26 +757,13 @@ body {
   border: 1px solid transparent; 
 }
 
-.portfolio-list a {
-  position: relative;
-  display: block;
-  width: 100%;
-  font-size: 16px;
-}
 
-.portfolio-list a img {
-  width: 100%;
-}
 
 /* 
 .portfolio-list > li a:hover {
   color: salmon;
 } */
 
-.portfolio-link a {
-  display: inline-block;
-  width: 32%;
-}
 
 
 .vue-port{
@@ -956,6 +978,7 @@ body {
   width: 90%;
   height: 65%;
   margin: 0 auto;
+  padding-bottom: 30px;
   background-color: rgba(254, 254, 254, 0.7);
 }
 
@@ -963,7 +986,9 @@ body {
   position: relative;
   display: block;
   padding: 20px;
+  color: #5acaaf;
 }
+
 .footer-box1 .f-pic {
   position: relative;
   display: block;
@@ -981,16 +1006,33 @@ body {
 
 .footer-box2 {
   padding: 15px;
-
 }
+.footer-box2 span {
+  color: #165c50;
+  font-size: 30px;
+}
+.f-icon {
+  position: relative;
+  display: block;
+}
+
+.f-icon ul li {
+  position: relative;
+  display: inline-block;
+}
+.f-icon img{
+  width: 50px;
+  height: 50px;
+}
+
 
 .footer-box3 {
   padding: 15px;
 }
 
 .footer-box3 > span {
-  font-size: 18px;
-  color: #666;
+  font-size: 22px;
+  color: #5acaaf;
 }
 .footer-box3 .kakao {
   padding: 10px;
@@ -1007,6 +1049,7 @@ body {
 
 .footer-box3 .kakao > span {
   font-size: 15px;
+
 }
 
 .footer-bottom {
