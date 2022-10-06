@@ -1,6 +1,4 @@
-
 window.onload = function () {
-  
   AOS.init();
 
   const snsMenuOpen = $('.sns-menu-list > i');
@@ -29,12 +27,10 @@ window.onload = function () {
   let Section = $('section');
   let sectionH = [];
   let gnbLi = $('.gnb > li > a')
-  console.log(gnbLi)
-
+  
   $.each(Section, function (index) {
     let Wh = Math.ceil($(this).offset().top-80);
     sectionH[index] = Wh
-    console.log(sectionH)
     new Waypoint({
       element: $(this),
       handler: function (direction) {
@@ -65,6 +61,7 @@ window.onload = function () {
   new Swiper(".sw-about", {
     slidesPerView: 1,
     direction: "vertical",
+    allowTouchMove: false,
     loop: true,
     autoplay: {
       delay: 1000,
@@ -73,8 +70,9 @@ window.onload = function () {
   });
 
 
+
   // 프로필 페이지 도착시 프로그래스바 실행
-  let profile = $('.profile');
+  let profile = $('.skill');
   new Waypoint({
     element: profile,
     handler: function (direction) {
@@ -83,8 +81,8 @@ window.onload = function () {
     offset: '70%',
   });
 
-  function makeCircle(_id, _str, _startColor, _endColor) {
-    let bar = new ProgressBar.Circle(_id, {
+  function makeLine(_id, _str, _startColor, _endColor) {
+    let bar = new ProgressBar.Line(_id, {
       color: "#777",
       strokeWidth: 10,
       trailWidth: 5,
@@ -102,34 +100,34 @@ window.onload = function () {
         color: _endColor,
         width: 6,
       },
-      step: function (state, circle) {
-        circle.path.setAttribute("stroke", state.color);
-        circle.path.setAttribute("stroke-width", state.width);
+      step: function (state, line) {
+        line.path.setAttribute("stroke", state.color);
+        line.path.setAttribute("stroke-width", state.width);
 
-        let value = Math.round(circle.value() * 100);
+        let value = Math.round(line.value() * 100);
         if (value === 0) {
-          circle.setText("");
+          line.setText("");
         } else {
-          circle.setText(_str + "<br>" + value + '%');
+          line.setText(_str + "<br>" + value + '%');
         }
       },
     });
     bar.text.style.fontFamily = "LeferiBase";
-    bar.text.style.fontSize = "15px";
+    bar.text.style.fontSize = "14px";
     bar.text.style.fontWeight = "500";
     bar.text.style.color = "#333";
     return bar;
   }
 
-  let bar_html = makeCircle(html, "HTML", "#fafad2", "#e8a9a2");
-  let bar_css = makeCircle(css, "CSS", "#fafad2", "#e8a9a2");
-  let bar_js = makeCircle(js, "JS", "#fafad2", "#e8a9a2");
-  let bar_jquery = makeCircle(jquery, "JQuery", "#fafad2", "#e8a9a2");
-  let bar_scss = makeCircle(scss, "SCSS", "#fafad2", "#e8a9a2");
-  let bar_vue = makeCircle(vue, "Vue.js", "#fafad2", "#e8a9a2");
-  let bar_figma = makeCircle(figma, "Figma", "#fafad2", "#e8a9a2");
-  let bar_github = makeCircle(github, "Github", "#fafad2", "#e8a9a2");
-  let bar_notion = makeCircle(notion, "Notion", "#fafad2", "#e8a9a2");
+  let bar_html = makeLine(html, "HTML", "#fafad2", "#e8a9a2");
+  let bar_css = makeLine(css, "CSS", "#fafad2", "#e8a9a2");
+  let bar_js = makeLine(js, "JS", "#fafad2", "#e8a9a2");
+  let bar_jquery = makeLine(jquery, "JQuery", "#fafad2", "#e8a9a2");
+  let bar_scss = makeLine(scss, "SCSS", "#fafad2", "#e8a9a2");
+  let bar_vue = makeLine(vue, "Vue.js", "#fafad2", "#e8a9a2");
+  let bar_figma = makeLine(figma, "Figma", "#fafad2", "#e8a9a2");
+  let bar_github = makeLine(github, "Github", "#fafad2", "#e8a9a2");
+  let bar_notion = makeLine(notion, "Notion", "#fafad2", "#e8a9a2");
 
   
   let barAni = () => {
@@ -143,6 +141,11 @@ window.onload = function () {
     bar_github.animate(0.85);
     bar_notion.animate(0.95);
   };
+
+  const progressbarText = $('.progressbar-text');
+  setTimeout(function () {
+    progressbarText.css('left', 110 + '%');
+  },50)
 
 
 
@@ -223,10 +226,10 @@ window.onload = function () {
   });
 
   let portfolio = $('.sw-portfolio')
-  console.log(portfolio)
   portfolio.hover(function() {
     swPortfolio.autoplay.stop()
   }, function() {
     swPortfolio.autoplay.start()
   })
+
 }

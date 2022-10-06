@@ -42,6 +42,8 @@
   <script src="js/aos/aos.js"></script>
   <!-- waypoint -->
   <script src="js/jquery.waypoints.js"></script>
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
   <!-- gsap -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"
     integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ=="
@@ -51,11 +53,10 @@
   <script src="js/lightbox2/js/lightbox.js"></script>
   <!-- Progressbar -->
   <script type="text/javascript" src="js/progressbar/progressbar.js"></script>
-  <!--  -->
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+  <!-- lineProgressbar -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+  <script src="jquery.lineProgressbar.js"></script>
   <!-- chart.js -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
   <link rel="stylesheet" href="css/style.css" />
@@ -92,13 +93,13 @@
       <div class="inner">
         <div class="logo">로고</div>
         <ul class="gnb">
-          <li><a href="#home">HOME</a></li>
-          <li><a href="#about">ABOUT</a></li>
-          <li><a href="#profile">PROFILE</a></li>
-          <li><a href="#possibility">POSSIBILITY</a></li>
-          <li><a href="#portfolio">PORTFOLIO</a></li>
-          <li><a href="#vision">VISION</a></li>
-          <li><a href="#life">LIFE</a></li>
+          <li><a>HOME</a></li>
+          <li><a>ABOUT</a></li>
+          <li><a>PROFILE</a></li>
+          <li><a>POSSIBILITY</a></li>
+          <li><a>PORTFOLIO</a></li>
+          <li><a>VISION</a></li>
+          <li><a>LIFE</a></li>
           <!-- <li>
             <a href="https://github.com/yhist" target="_blank">GitHub</a>
           </li>
@@ -131,7 +132,7 @@
         <h2>Who am i</h2>
         <div class="about-top">
           <div class="about-top-pic">
-            <img src="images/selfi1-09-23-00-25-04.jpeg" alt="">
+            <img src="images/222.JPG" alt="">
           </div>
           <div class="about-top-txt">
             <p>
@@ -152,16 +153,12 @@
         </div>
         <div class="about-bottom">
           <div class="about-bottom-txt">
-            <h3>배움의 자세를 일지 않고 성장해 나가는 <br> <span>성장하는 프론트엔드개발자 도연희 입니다.</span> </h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae quidem similique veritatis rerum ut
-              aperiam eum eos fuga. Consectetur debitis repudiandae sequi ipsa praesentium aut tempore odio, eos
-              laudantium dolor. aperiam eum eos fuga. Consectetur debitis repudiandae sequi ipsa praesentium aut tempore
-              odio, eos laudantium dolor.
-              <!-- <hr>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia fugit nihil velit molestiae, dignissimos
-              repudiandae alias ab praesentium veniam laborum possimus magnam? Aliquid non laborum distinctio ad cum
-              repellendus doloribus. -->
+            <p>
+              어떠한 분야에서 오래 나아가기 위해서는 꾸준함이 뒷받침이 되어야 합니다. 천천히 배우더라도 앞으로 나아갈 방향과 가치를 먼저 생각하며 꾸준히 발전하겠습니다.
+              <br> 또한 배움을 두려워하지 않고 항상 호기심을 통해 발전하여 가능성을 만들어가겠습니다.
+              배움의 과정속에서 어려움을 마주치더라도 포기하지 않고, 꾸준함을 무기로 위기도 성장의 발판으로 삼는 개발자가 되겠습니다.
             </p>
+            <h3>호기심과 꾸준함을 무기로 나아가는<br> <span>성장하는 프론트엔드개발자 도연희 입니다.</span> </h3>
           </div>
           <div class="about-bottom-pic">
             <img src="images/selfi1-09-23-00-25-04.jpeg" alt="">
@@ -176,7 +173,7 @@
         <div class="profile-text">
           <h2>PROFILE</h2>
           <ul class="profile-text-list">
-            <li>
+            <li data-aos="zoom-in-up" data-aos-delay="300" data-aos-duration="400">
               <h3>PROFILE</h3>
               <ul>
                 <li>
@@ -193,28 +190,28 @@
                 </li>
               </ul>
             </li>
-            <li>
+            <li data-aos="zoom-in-up" data-aos-delay="400" data-aos-duration="400">
               <h3>EDUCATION</h3>
               <ul>
                 <li>
                   <span>2022</span>
-                  <p>vue 프론트엔드수업 수료</p>
+                  <p>그린컴퓨터아트학원 뷰(Vue)활용 프론트엔드 개발자 양성과정 수료</p>
                 </li>
                 <li>
                   <span>2021</span>
-                  <p>영남대학교 졸업</p>
+                  <p>영남대학교 식품경제외식학과 졸업</p>
                 </li>
                 <li>
                   <span>2021</span>
-                  <p>세양-해외영업팀 근무</p>
+                  <p>세양 해외영업팀 근무</p>
                 </li>
                 <li>
                   <span>2020</span>
-                  <p>대외활동</p>
+                  <p>대구 문화기행 대외활동 청춘빛 활동</p>
                 </li>
               </ul>
             </li>
-            <li>
+            <li data-aos="zoom-in-up" data-aos-delay="600" data-aos-duration="400">
               <h3>CERTIFICATE</h3>
               <ul>
                 <li>
@@ -233,32 +230,44 @@
             </li>
           </ul>
         </div>
-        <div class="skill">
-          <h2>SKILL</h2>
-          <div class="skill-box">
-            <h3>PROGRAM SKILL</h3>
-            <ul class="program-skill">
-              <li id="html"></li>
-              <li id="css"></li>
-              <li id="js"></li>
-              <li id="jquery"></li>
-              <li id="scss"></li>
-              <li id="vue"></li>
+        <div class="mbti">
+          <img src="images/mbti.png" alt="mbti이미지">
+        </div>
 
-            </ul>
-            <h3>COMMUNICATION SKILL</h3>
-            <ul class="communication-skill">
-              <li id="figma"></li>
-              <li id="github"></li>
-              <li id="notion"></li>
-            </ul>
+      </div>
+      <div class="skill">
+        <div class="inner skill-box">
+          <div class="skill-pic">
+            <img src="images/skill-pic6.png" alt="">
+          </div>
+
+          <div class="skill-bar">
+            <div class="skill-bar-text">
+              <p>다양한 역량을 통해 잠재력을 발산하는 <br> <strong>개발자</strong> 도연희입니다.</p>
+            </div>
+            <h2>SKILL</h2>
+            <div class="program-skill rd">
+              <h3>PROGRAM SKILL</h3>
+              <div id="html"></div>
+              <div id="css"></div>
+              <div id="js"></div>
+              <div id="jquery"></div>
+              <div id="scss"></div>
+              <div id="vue"></div>
+            </div>
+            <div class="communication-skill rd">
+              <h3>COMMUNICATION SKILL</h3>
+              <div id="figma"></div>
+              <div id="github"></div>
+              <div id="notion"></div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
 
-    <section class="possibility" id="possibility">
+    <section class="possibility">
       <div class="inner">
         <h2>POSSIBILITY</h2>
         <div class="possibility-box">
@@ -266,49 +275,45 @@
             <img src="images/possibility.png" alt="possibility">
           </div>
           <div class="possibility-txt">
-            <ul class="possibility-txt-list">
-              <li class="possibility-list left-list" data-aos="fade-right" data-aos-duration="1500">
-                <span>도전정신</span>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo quibusdam quisquam iste doloribus,
-                  dolorem facere!</p>
+            <ul class="possibility-txt-list around-list">
+              <li class="possibility-list left-list" data-aos="fade-right" data-aos-delay="300" data-aos-duration="500">
+                <h3>도전정신</h3>
+                <p>항상 배우는 마음가짐으로 새로운 업무나 어려움을 마주했을 때 두려워하지 않고 도전하겠습니다.
+                  목표를 달성하기 위해 쉬운길 보다는 내가 성장할 수 있는 곧을 길을 선택하는 사람이 되겠습니다.</p>
               </li>
-              <li class="possibility-list" data-aos="fade-left" data-aos-duration="1500">
-                <span>전문성</span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, consectetur. Ipsam, ab, odit,
-                  corrupti ratione minus distinctio voluptatum odio voluptatem facilis placeat amet aliquid totam. Iure
-                  eligendi maxime asperiores temporibus!</p>
-                <!-- <p>프론트엔드 개발자로써 전문성을 갖추기 위해 학원수업 외에 추가적인 개인적인 공부와 스터디를 통해 부족한 부분을 채우고자했습니다.</p> -->
+              <li class="possibility-list" data-aos="fade-left" data-aos-delay="300" data-aos-duration="500">
+                <h3>전문성</h3>
+                <p>학원 훈련과정을 통해 다양한 개발스킬을 학습하고 응용하여 자신의 것으로 만들었습니다. 또한 빠른게 변화하는 트렌드의 흐름을 파악하고 적합한 전문성을 갖추기 위해 추가적인 개인적인
+                  공부와 스터디활동을 통해 부족한 부분을 채우고자했습니다.</p>
               </li>
             </ul>
             <ul class="possibility-txt-list">
-              <li class="possibility-list left-list" data-aos="fade-right" data-aos-duration="1500">
-                <span>책임감</span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, consectetur. Ipsam, ab, odit,
-                  corrupti ratione minus distinctio voluptatum odio voluptatem facilis placeat amet aliquid totam. Iure
-                  eligendi maxime asperiores temporibus!</p>
-                <!-- <p>학생회에서 기획부장의 역할을 수행하며 저의 모든 말과 행동에 항상 책임감을 갖고 해내었습니다.</p> -->
+              <li class="possibility-list left-list" data-aos="fade-right" data-aos-delay="500" data-aos-duration="500">
+                <h3>책임감</h3>
+                <p>대학교 학생회애서 기획부장 역할을 수행하며 저의 사소한 말과 행동에도 책임이 따름을 배웠습니다. 제가 기획하는 활동들이 학생들의 결정을 대표한다는 마음가짐으로 모든 사소한 일에도
+                  최선을 다했습니다.
+                  앞으로도 제가 맡은 일에 경중을 두지않고 모든 일을 기한내에 수행할 수 있도록 책임감을 가지고 임하겠습니다. </p>
               </li>
-              <li class="possibility-list" data-aos="fade-left" data-aos-duration="1500">
-                <span>커뮤니케이션</span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, consectetur. Ipsam, ab, odit,
-                  corrupti ratione minus distinctio voluptatum odio voluptatem facilis placeat amet aliquid totam. Iure
-                  eligendi maxime asperiores temporibus!</p>
-                <!-- <p>대외활동에서 팀원, 임원, 부회장이라는 다양한 역할을 경험하며 각각의 역할에 필요한 커뮤니케이션 방식으로 다양항 사람들과 소통하고 원하는 결과를 도출해본 경험이 있습니다.</p> -->
+              <li class="possibility-list" data-aos="fade-left" data-aos-delay="500" data-aos-duration="500">
+                <h3>커뮤니케이션</h3>
+                <p>대외활동에서 팀원, 임원, 부회장이라는 다양한 역할을 경험하며 각각의 역할에 필요한 커뮤니케이션 방식으로 다양항 사람들과 소통하고 원하는 결과를 도출해본 경험이 있습니다.
+                  "경청"을 통해 타인의 의견에 귀기울이고 여러 이해관계의 사람들의 의견을 존중하여 가장 최선의 답을 제시하기 위해 노력하겠습니다. </p>
               </li>
 
             </ul>
-            <ul class="possibility-txt-list">
-              <li class="possibility-list left-list" data-aos="fade-right" data-aos-duration="1500">
-                <span>지구력</span>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo quibusdam quisquam iste doloribus,
-                  dolorem facere!</p>
+            <ul class="possibility-txt-list around-list">
+              <li class="possibility-list left-list" data-aos="fade-right" data-aos-delay="700" data-aos-duration="500">
+                <h3>지구력</h3>
+                <p>ESFJ로 평소 목표를 위한 계획을 세우고 실천하는 것을 선호합니다. 이러한 계획을 세우는 습관은 중간에 포기하지 않고 꾸준히 해나갈 수 있는 원동력이 되었습니다.
+                  작업을 진행하기 전에 먼저 적절한 시간배분과 업무의 중요도를 파악한 후 구체적인 계획을 세워 스스로가 만족할 수 있는 결과를 도출할 수 있도록 노력합니다.
+                </p>
               </li>
-              <li class="possibility-list" data-aos="fade-left" data-aos-duration="1500">
-                <span>팀워크</span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, consectetur. Ipsam, ab, odit,
-                  corrupti ratione minus distinctio voluptatum odio voluptatem facilis placeat amet aliquid totam. Iure
-                  eligendi maxime asperiores temporibus!</p>
-                <!-- <p>저는 팀워크에서 '경청'을 가장 중요하게 생각하며 팀원들의 다양한 의견을 통합하여 최고의 결과물을 낼 수 있습니다.</p> -->
+              <li class="possibility-list" data-aos="fade-left" data-aos-delay="700" data-aos-duration="500">
+                <h3>팀워크</h3>
+                <p>제가 팀워크에서 가장 중요하게 생각하는 부분은 "배려"와 "소통" 입니다.
+                  스터디원들과 팀프로젝트를 진행하며 다양한 의견차이가 발생했고 그때마다 팀원들과 의견을 공유하고 소통하여 최선의 대안을 찾아냈습니다.
+                  이 과정에서 팀원들과 배려하며 소통하는 방법을 배웠고 앞으로도 팀프로젝트를 진행할 때 팀원들과 최고의 결과를 위해 열심히 소통하겠습니다.
+                </p>
               </li>
 
             </ul>
@@ -325,11 +330,12 @@
           <div class="swiper-container sw-portfolio">
             <ul class="swiper-wrapper">
               <li class="swiper-slide portfolio-list">
-                <h5>거제청년이룸 <br>
-                  ( <i class="fas fa-desktop"> </i> /
-                  <i class="fas fa-mobile-alt"> </i> /
-                  <i class="fab fa-vuejs"></i> )
+                <h5>거제청년이룸
+                  <i class="fas fa-desktop"> </i> -
+                  <i class="fas fa-mobile-alt"> </i> -
+                  <i class="fab fa-vuejs"></i>
                 </h5>
+
                 <a href="http://localhost:8080/page-geoje/" target="_blank">
                   <img src="images/geojeyouth -page.png" alt="거제청년이룸" class="port-img" class="port-img" />
                 </a>
@@ -577,34 +583,37 @@
           </div>
           <div class="vision-txt">
             <ul>
-              <li data-aos="zoom-in" data-aos-duration="1500">
-                <img src="images/number-1.png" alt="숫자1" class="vision-num">
+              <li data-aos="zoom-in" data-aos-duration="500">
+                <!-- <img src="images/number-1.png" alt="숫자1" class="vision-num"> -->
                 <div>
-                  <h4>1년후, 스펀지처럼 흡수하는 신입 개발자</h4>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque velit officiis culpa quod
-                    consequuntur ducimus rerum rem natus maxime quasi repudiandae, maiores quia recusandae amet
-                    quibusdam
-                    cum nobis quo sequi!</p>
+                  <h4> 1년후, 스펀지처럼 흡수하는 신입 개발자</h4>
+                  <p>1년 후 저는 신입 개발자로서 다양한 실무를 직접 경험하고 성장하는 시기일 것입니다.
+                    프로젝트를 수행하는 과정에서 분명 낯설고 어려운 부분이 있겠지만 항상 겸손하게 배우는 자세로 임하겠습니다.
+                    상사, 선배, 팀원들과 끊임없이 소통하고 제게 주어진 피드백과 조언을 적극적으로 수용하여
+                    빠르고 바르게 성장하는 새싹 같은 프론트엔드 개발자가 될 수 있도록 노력하겠습니다.
+                  </p>
                 </div>
               </li>
-              <li data-aos="zoom-in" data-aos-duration="1500">
-                <img src="images/number-3.png" alt="숫자3" class="vision-num">
+              <li data-aos="zoom-in" data-aos-duration="500">
                 <div>
-                  <h4>3년후, 머무르지 않고 꾸준히 성장하는 개발자</h4>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque velit officiis culpa quod
-                    consequuntur ducimus rerum rem natus maxime quasi repudiandae, maiores quia recusandae amet
-                    quibusdam
-                    cum nobis quo sequi!</p>
+                  <h4>5년후, 머무르지 않고 꾸준히 성장하는 개발자</h4>
+                  <p>5년 후 저는 다양한 실무 경험을 바탕으로 업무에 대한 지식과 전문성을 갖춘 개발자일 것입니다.
+                    항상 처음과 같은 마음가짐으로 스스로 꾸준히 발전해나가겠습니다.
+                    다양한 경험과 경력을 통해 향상된 협업 능력과 안정적으로 개발 전략을 세우는 능력을 발휘하여 성공적으로 프로젝트를 이끌어 내겠습니다.
+                    또한 절대 안주하지 않고 새로운 목표를 위해 항상 도전하고 끊임없이 발전하는 개발자가 되겠습니다.
+                  </p>
                 </div>
+                <!-- <img src="images/number-3.png" alt="숫자3" class="vision-num"> -->
               </li>
-              <li data-aos="zoom-in" data-aos-duration="1500">
-                <img src="images/number-5.png" alt="숫자5" class="vision-num">
+              <li data-aos="zoom-in" data-aos-duration="500">
+                <!-- <img src="images/number-5.png" alt="숫자5" class="vision-num"> -->
                 <div>
-                  <h4>5년후, 확신을 갖춘 개발자</h4>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque velit officiis culpa quod
-                    consequuntur ducimus rerum rem natus maxime quasi repudiandae, maiores quia recusandae amet
-                    quibusdam
-                    cum nobis quo sequi!</p>
+                  <h4>10년후, 확신을 갖춘 개발자</h4>
+                  <p>10년 후 저는 스스로에게 확신을 가질 수 있는 리더의 모습일 것 입니다.
+                    그동안의 경험으로 배운 저의 노하우를 팀원들과 공유하며 함께 성장해나갈 수 있는
+                    ~~ 한 동안 ~~관해서 충분한 이해력과 안목이 깊이 갖춰진 개발자가 되어있을 것입니다.
+                    이를 통해 ~~~~~~~기반으로 섬세하고 안목 높은 디자이너가 되고 싶습니다. ~로서 이름을 남기고 싶다.
+
                 </div>
               </li>
 
@@ -642,7 +651,7 @@
           </div>
           <p>
             여기까지<br>저의 포트폴리오입니다.<br>
-            <span>끝까지 봐주셔서 갑사합니다.</span>
+            <span>끝까지 봐주셔서 감사합니다.</span>
           </p>
         </div>
         <div class="footer-pic">
@@ -654,8 +663,14 @@
         <span>© 2022. DOYEONHEE All rights reserved.</span>
       </div>
     </footer>
-    <!-- 
-    <footer class="footer">
+
+
+
+
+
+
+
+    <!-- <footer class="footer">
       <div class="inner">
         <div class="footer-box">
           <div class="footer-box1">
