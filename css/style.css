@@ -1101,10 +1101,10 @@ body {
 
 .vision-txt h4 {
   font-size: 20px;
-  text-indent: 3%;
+  /* text-indent: 3%; */
   margin-bottom: 4%;
   line-height: 15px;
-  border-left: 3px solid #f79c92;
+  /* border-left: 3px solid #f79c92; */
 }
 
 .vision-txt ul {}
@@ -1113,8 +1113,8 @@ body {
   font-size: 14px;
   line-height: 22px;
   letter-spacing: 1px;
-  padding-left: 3%;
-  border-left: 2px solid #f3d0cd;
+  /* padding-left: 3%; */
+  /* border-left: 2px solid #f3d0cd; */
 
 }
 
@@ -1125,6 +1125,12 @@ body {
 }
 
 .vision-txt ul li div {
+}
+
+.vision-txt ul li div strong {
+  color: #f79c92;
+  font-size: 22px;
+  font-weight: 500;
 }
 
 .vision-num {
