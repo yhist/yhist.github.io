@@ -165,7 +165,7 @@ window.onload = function () {
     centeredSlides: true,
     loop: true,
     autoplay: {
-      delay: 310000000000,
+      delay: 3100,
     },
     loopFillGroupWithBlank: true,
     pagination: {
