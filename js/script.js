@@ -191,6 +191,11 @@ window.onload = function () {
     autoplay: {
       delay: 310000000000,
     },
-  })
+  });
+  
+  const tabList = document.querySelectorAll('.tab_menu .list li');
+const contents = document.querySelectorAll('.tab_menu .cont_area .cont')
+let activeCont = ''; // 현재 활성화 된 컨텐츠 (기본:#tab1 활성화)
+
 
 }

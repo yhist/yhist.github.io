@@ -210,6 +210,7 @@ body {
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 400;
+  cursor: pointer;
 }
 
 .gnb > li > a:hover {
@@ -1222,6 +1223,56 @@ body {
   color: #b4cdb3;
   margin: 3% 0;
 }
+.life-middle {
+
+}
+.insta-tag {
+
+}
+
+.insta-tag li {
+  position: absolute;
+  cursor: pointer;
+}
+.insta-tag li:nth-child(1) {
+  top: 22%;
+  left: 13%;
+}
+.insta-tag li:nth-child(2) {
+  top: 45%;
+  left: 3%;
+}
+.insta-tag li:nth-child(3) {
+  top: 60%;
+  left: 15%;
+}
+.insta-tag li:nth-child(4) {
+  top: 80%;
+  left: 5%;
+}
+.insta-tag li:nth-child(5) {
+  top: 20%;
+  right: 8%;
+}
+.insta-tag li:nth-child(6) {
+  top: 45%;
+  right: 17%;
+}
+.insta-tag li:nth-child(7) {
+  top: 64%;
+  right: 3%;
+}
+.insta-tag li:nth-child(8) {
+  top: 87%;
+  right: 15%;
+}
+
+.insta-tag li a {
+  font-size: 33px;
+  font-weight: 500;
+  color: #999;
+}
+
 .life-bottom {
   position: relative;
   display: flex;
@@ -1252,10 +1303,49 @@ body {
   box-shadow: 1px 2px 6px rgb(210, 209, 209);
 }
 
-.sw-life img {
+#sky {
+  background: url('../images/sky.jpeg') no-repeat center;
+  background-size: cover;
+}
+#travel {
+  background: url('../images/travel.jpeg') no-repeat center;
+  background-size: cover;
+}
+
+#cooking {
+  background: url('../images/cooking.jpeg') no-repeat center;
+  background-size: cover;
+}
+
+#study {
+  background: url('../images/study.jpeg') no-repeat center;
+  background-size: cover;
+}
+
+#hobby {
+  background: url('../images/concert.jpeg') no-repeat center;
+  background-size: cover;
+}
+
+#chelsea {
+  background: url('../images/cooking.jpeg') no-repeat center;
+  background-size: cover;
+}
+
+#mukstagram {
+  background: url('../images/cooking.jpeg') no-repeat center;
+  background-size: cover;
+}
+
+#coffee {
+  background: url('../images/cooking.jpeg') no-repeat center;
+  background-size: cover;
+}
+
+/* .sw-life img {
   width: 100%;
   height: 100%;  
-}
+} */
 
 
 /* 푸터 영역 */
