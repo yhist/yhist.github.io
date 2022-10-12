@@ -1018,6 +1018,8 @@ body {
   overflow: hidden;
   transform: scale(0.97);
   transition: transform 0.5s;
+  box-shadow: 1px 1px 3px rgb(182, 182, 182);
+
 }
 
 .vue-port-right ul li:hover{
@@ -1040,19 +1042,19 @@ body {
 }
 
 .vue-item1 {
-  background: url('../images/to-do-list.jpeg') no-repeat center;
-  background-size: cover;
+  background: url('../images/minimemo.jpeg') no-repeat center;
+  background-size: contain;
 }
 .vue-item2 {
   background: url('../images/ghibli.jpeg') no-repeat center;
   background-size: cover;
 }
 .vue-item3 {
-  background: url('../images/todolist1.jpeg') no-repeat center;
-  background-size: cover;
+  background: url('../images/todorest.jpeg') no-repeat center;
+  background-size: contain;
 }
 .vue-item4 {
-  background: url('../images/todolist2.webp') no-repeat center;
+  background: url('../images/not-prepare.png') no-repeat center;
   background-size: cover;
 }
 
