@@ -56,6 +56,16 @@ window.onload = function () {
         behavior: 'smooth',
       })
     })
+  });
+
+  // mywork누르면 portfolio로 
+  const readMe = $('.readme');
+  // const myWork = $('#portfolio')
+  readMe.click(function (event) {
+    event.preventDefault();
+    $('html, body').animate({
+      scrollTop: $("#portfolio").offset().top-80
+  }, 2000);
   })
 
   new Swiper(".sw-about", {
@@ -148,62 +158,6 @@ window.onload = function () {
   },50)
 
 
-
-  // const ctx = document.getElementById('myChart').getContext('2d');
-  // const myChart = new Chart(ctx, {
-  //     type: 'radar',
-  //     data: {
-  //         labels: ['책임감', '노력', '도전정신', '전문성', '의사소통'],
-  //         datasets: [{
-  //             label: 'possibility',
-  //             data: [97, 90, 95, 93, 100],
-  //             backgroundColor: [
-  //                 'rgba(217, 217, 217, 0.5)',
-  //             ],
-  //             borderColor: [
-  //                 'rgba(217, 217, 217, 1)',
-  //             ],
-  //             pointBackgroundColor: 'rgb(190, 163, 200)',
-  //             borderWidth: 3
-  //         }]
-  //     },
-  //     options: {
-  //         responsive: false,
-  //         plugins: {
-  //             legend: {
-  //                 display: false
-  //             }
-  //         },
-  //         scales: {
-  //             r: {
-  //                 pointLabels: {
-  //                     font: {
-  //                         size: 22,
-  //                         family: 'Noto Sans KR',
-  //                     },
-  //                     color: 'rgb(239, 161, 160, 0.7)'
-  //                 },
-  //                 beginAtZero: true,
-  //                 grid: {
-  //                   color: 'rgba(222, 185, 146, 0.5)',
-  //               },
-  //               angleLines: {
-  //                   color: 'rgba(222, 185, 146, 0.4)'
-  //               },
-  //             }
-  //         },
-  //         ticks: {
-  //             suggestedMin: 0,
-  //             suggestedMax: 100,
-  //             stepSize: 5,
-  //             maxTicksLimit: 10,
-  //             display: false
-  //         }
-  //     }
-  // });
-
-
-
   let swPortfolio = new Swiper(".sw-portfolio", {
     slidesPerView: 3,
     spaceBetween: 100,
@@ -226,10 +180,17 @@ window.onload = function () {
   });
 
   let portfolio = $('.sw-portfolio')
-  portfolio.hover(function() {
+  portfolio.hover(function () {
     swPortfolio.autoplay.stop()
-  }, function() {
+  }, function () {
     swPortfolio.autoplay.start()
+  });
+
+  new Swiper('.sw-life', {
+    loop: true,
+    autoplay: {
+      delay: 310000000000,
+    },
   })
 
 }

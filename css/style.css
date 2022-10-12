@@ -177,9 +177,17 @@ body {
   position: relative;
   display: flex;
   justify-content: space-between;
+  height: 100%;
 }
 .logo {
+  margin-left: 2%;
+  margin-top: 2px;
+  padding: 7px 0;
+  height: 100%;
+}
 
+.logo img {
+  height: 90%;
 }
 
 .gnb {
@@ -559,6 +567,52 @@ body {
   width: 40%;
 }
 
+.mbti .bubble {
+  position: absolute;
+  top: 15%;
+  width: 48%;
+  height: 30%;
+  text-align: center;
+  background: url('../images/greenbubble.png') no-repeat center;
+  background-size: contain;
+  z-index: 1;
+  animation: bubble 1.5s ease-in-out 1s infinite alternate;
+}
+
+@-webkit-keyframes bubble {
+  0% {
+    left:0px;
+  }
+  100% {
+    left:30px;
+  }
+}
+
+.bubble h3 {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  font-weight: 500;
+  color: #4d8ca3;
+}
+
+.bubble span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #4d8ca3;
+}
+
+.bubble p {
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  width: 80%;
+  transform: translateX(-50%);
+  font-size: 12.5px;
+}
+
 .mbti img {
   position: absolute;
   bottom: 13%;
@@ -642,7 +696,8 @@ body {
 
 .rd div{
   position: relative;
-  margin-bottom: 5%;
+  margin-bottom: 10%;
+  text-align: center;
 }
 
 .program-skill {
@@ -767,6 +822,7 @@ body {
   font-family: "bright_gesture";
   text-align: center;
   font-size: 40px;
+  color: #b4cdb3;
 }
 
 .portfolio-wrap {
@@ -829,7 +885,7 @@ body {
   display: inline-block;
   /* margin-left: 1.3%; */
   width: 30%;
-  transform: scale(0.55);
+  transform: scale(0.7);
   transition: all 0.5s;
   opacity: 0.5;
 }
@@ -846,7 +902,8 @@ body {
 .portfolio-link {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: space-evenly;
+  width: 85%;
   opacity: 0;
   margin-top: 30px;
 }
@@ -858,7 +915,7 @@ body {
   text-align: center;
   padding: 5px;
   margin: 0 3% 3% 0;
-  font-size: 18px;
+  font-size: 16px;
   white-space: nowrap;
   border: 2px solid #f3d0cd;
   border-radius: 10px;
@@ -875,6 +932,7 @@ body {
   color: #fff;
   transform: scale(1.05);
 }
+
 .portfolio-link .vue:hover {
   background-color: #d1e0d0 ;
 }
@@ -1144,12 +1202,59 @@ body {
 .life {
   position: relative;
   display: block;
-  margin: 30px;
-  background-color: #f7f7f7;
+  margin: 10% 0;
 }
+
 .life .inner {
   width: 100%;
+}
 
+.life-top {
+  position: relative;
+  display: block;
+  /* width: 20%; */
+}
+
+.life-top h2 {
+  font-family: "bright_gesture";
+  text-align: center;
+  font-size: 40px;
+  color: #b4cdb3;
+  margin: 3% 0;
+}
+.life-bottom {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.life-frame {
+  position: relative;
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  display: block;
+  height: 620px;
+  width: 435px;
+  background: url('../images/insta-frame.png') no-repeat center;
+  background-size: cover;
+  box-shadow: 1px 2px 6px rgb(193, 190, 190);
+}
+
+.sw-life {
+  position: absolute;
+  top: 12%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  width: 90%;
+  height: 61%;
+  box-shadow: 1px 2px 6px rgb(210, 209, 209);
+}
+
+.sw-life img {
+  width: 100%;
+  height: 100%;  
 }
 
 
@@ -1161,10 +1266,68 @@ body {
 }
 
 .footer .inner {
+  padding: 3% 0;
+}
+
+.footer .inner h2 {
+  text-align: center;
+  font-size: 40px;
+  font-family: "bright_gesture";
+  color: #86b984;
+  margin-bottom: 5%;
+}
+
+.f-icon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+
+.f-icon ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.f-icon ul li {
+  position: relative;
+  display: block;
+  margin-right: 5%;
+  width: 55px;
+}
+
+.f-icon ul li a {
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+}
+ 
+.f-icon ul li img {
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+}
+
+.f-icon ul li:hover img {
+  transform: scale(1.2);
+} 
+
+.f-txt {
+  position: relative;
+  display: block;
+  text-align: center;
+}
+
+
+/* 선생님 추천 푸터 */
+
+/* 
+.footer .inner {
   display: flex;
   justify-content: space-between;
   padding: 5% 0;
-}
+} 
 
 .footer-box {
   font-family: "bright_gesture";
@@ -1214,17 +1377,17 @@ body {
 }
 
 .footer-bottom {
-  /* margin-top: 5%; */
+  margin-top: 5%;
   padding-bottom: 3%;
   text-align: center;
-} 
+}  */
 
 
 
 
 
 
-
+/* 원래 푸터 */
 
 /* 
 .footer-box {
