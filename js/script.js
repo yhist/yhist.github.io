@@ -192,7 +192,7 @@ window.onload = function () {
     loop: true,
     effect: "fade",
     autoplay: {
-      delay: 2000,
+      delay: 2500,
     },
   });
 
