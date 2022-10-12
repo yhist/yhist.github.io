@@ -1134,7 +1134,7 @@ body {
 .vision-left {
   position: relative;
   display: block;
-  padding: 20px;
+  padding: 2%;
   margin-left: 30px;
 }
 
@@ -1147,7 +1147,7 @@ body {
   position: relative;
   display: block;
   width: 50%;
-  padding: 20px;
+  padding: 1%;
 }
 
 .vision-right h2 {
@@ -1161,6 +1161,7 @@ body {
 .vision-txt h4 {
   font-size: 20px;
   /* text-indent: 3%; */
+  font-weight: 500;
   margin-bottom: 4%;
   line-height: 15px;
   /* border-left: 3px solid #f79c92; */
@@ -1168,25 +1169,25 @@ body {
 
 .vision-txt ul {}
 
-.vision-txt ul p {
+.vision-txt p {
   font-size: 14px;
-  line-height: 22px;
+  line-height: 27px;
   letter-spacing: 1px;
   /* padding-left: 3%; */
   /* border-left: 2px solid #f3d0cd; */
 
 }
 
-.vision-txt ul li {
+.vision-txt li {
   display: flex;
   justify-content: space-around;
   margin: 40px 0;
 }
 
-.vision-txt ul li div {
+.vision-txt div {
 }
 
-.vision-txt ul li div strong {
+.vision-txt strong {
   color: #f79c92;
   font-size: 22px;
   font-weight: 500;
@@ -1198,6 +1199,7 @@ body {
   width: 100px;
   height: 100px;
 }
+
 
 /* 라이프 영역 */
 .life {
@@ -1223,54 +1225,67 @@ body {
   color: #b4cdb3;
   margin: 3% 0;
 }
-.life-middle {
-
+.life-bottom {
+  position: relative;
 }
 .insta-tag {
-
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%,-50%);
 }
 
-.insta-tag li {
+.insta-tag-l li,
+.insta-tag-r li {
   position: absolute;
   cursor: pointer;
 }
-.insta-tag li:nth-child(1) {
-  top: 22%;
-  left: 13%;
-}
-.insta-tag li:nth-child(2) {
-  top: 45%;
-  left: 3%;
-}
-.insta-tag li:nth-child(3) {
-  top: 60%;
+.insta-tag-l li:nth-child(1) {
+  top: 15%;
   left: 15%;
 }
-.insta-tag li:nth-child(4) {
+.insta-tag-l li:nth-child(2) {
+  top: 38%;
+  left: 3%;
+}
+.insta-tag-l li:nth-child(3) {
+  top: 59%;
+  left: 15%;
+}
+.insta-tag-l li:nth-child(4) {
   top: 80%;
   left: 5%;
 }
-.insta-tag li:nth-child(5) {
-  top: 20%;
-  right: 8%;
+.insta-tag-r li:nth-child(1) {
+  top: 17%;
+  right: 6%;
 }
-.insta-tag li:nth-child(6) {
-  top: 45%;
+.insta-tag-r li:nth-child(2) {
+  top: 38%;
   right: 17%;
 }
-.insta-tag li:nth-child(7) {
-  top: 64%;
+.insta-tag-r li:nth-child(3) {
+  top: 62%;
   right: 3%;
 }
-.insta-tag li:nth-child(8) {
+.insta-tag-r li:nth-child(4) {
   top: 87%;
   right: 15%;
 }
 
-.insta-tag li a {
+.tag-list {
   font-size: 33px;
   font-weight: 500;
   color: #999;
+  cursor: pointer;
+  transition: font-size 0.5s;
+}
+
+.tag-list.active{
+  font-size: 37px;
+  color: #1774AA;
 }
 
 .life-bottom {
@@ -1342,10 +1357,6 @@ body {
   background-size: cover;
 }
 
-/* .sw-life img {
-  width: 100%;
-  height: 100%;  
-} */
 
 
 /* 푸터 영역 */

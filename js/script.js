@@ -29,7 +29,7 @@ window.onload = function () {
   let gnbLi = $('.gnb > li > a')
   
   $.each(Section, function (index) {
-    let Wh = Math.ceil($(this).offset().top-80);
+    let Wh = Math.ceil($(this).offset().top - 80);
     sectionH[index] = Wh
     new Waypoint({
       element: $(this),
@@ -64,8 +64,8 @@ window.onload = function () {
   readMe.click(function (event) {
     event.preventDefault();
     $('html, body').animate({
-      scrollTop: $("#portfolio").offset().top-80
-  }, 2000);
+      scrollTop: $("#portfolio").offset().top - 80
+    }, 2000);
   })
 
   new Swiper(".sw-about", {
@@ -86,7 +86,7 @@ window.onload = function () {
   new Waypoint({
     element: profile,
     handler: function (direction) {
-      barAni(); 
+      barAni();
     },
     offset: '70%',
   });
@@ -155,7 +155,7 @@ window.onload = function () {
   const progressbarText = $('.progressbar-text');
   setTimeout(function () {
     progressbarText.css('left', 110 + '%');
-  },50)
+  }, 50)
 
 
   let swPortfolio = new Swiper(".sw-portfolio", {
@@ -186,16 +186,34 @@ window.onload = function () {
     swPortfolio.autoplay.start()
   });
 
-  new Swiper('.sw-life', {
+
+  // 라이프 슬라이드
+  const swLife = new Swiper('.sw-life', {
     loop: true,
+    effect: "fade",
     autoplay: {
-      delay: 310000000000,
+      delay: 2000,
     },
   });
-  
-  const tabList = document.querySelectorAll('.tab_menu .list li');
-const contents = document.querySelectorAll('.tab_menu .cont_area .cont')
-let activeCont = ''; // 현재 활성화 된 컨텐츠 (기본:#tab1 활성화)
 
+  swLife.on("slideChange",function(){
+    const activeLife = swLife.realIndex;
+    tagList.removeClass('active');
+    tagList.eq(activeLife).addClass('active');
+  })
+
+  // life 탭메뉴 효과
+  const tagList = $('.tag-list');
+  tagList.eq(0).addClass('active');
+  $.each(tagList,function(index){
+    $(this).click(function(e){
+      e.preventDefault();
+      tagList.removeClass('active');
+      tagList.eq(index).addClass('active');
+      swLife.slideTo( index + 1 , 500 , false );
+      swLife.autoplay.start();
+    })
+  })
+  
 
 }
