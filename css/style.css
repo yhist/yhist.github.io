@@ -678,7 +678,7 @@ body {
   font-size: 25px;
   font-weight: 500;
   color: #bfd2be;
-  margin-top: 15%;
+  margin-top: 12%;
   margin-bottom: 5%;
 }
 
@@ -811,8 +811,16 @@ body {
 }
 
 .possibility-list p {
-  font-size: 14px;
-  line-height: 25px;
+  letter-spacing: 1px;
+  font-size: 15px;
+  line-height: 28px;
+}
+
+.possibility-list strong {
+  position: relative;
+  font-size: 15px;
+  font-weight: 500;
+  background-color: rgb(190, 209, 189, 0.5);
 }
 
 .left-list {
@@ -840,9 +848,9 @@ body {
 
 .portfolio h3 {
   text-align: center;
-  font-size: 20px;
+  font-size: 22px;
   color: rgb(101, 99, 99);
-  margin: 0 0 20px 0;
+  margin: 10px 0 25px 0;
 }
 
 .portfolio-cate {
@@ -861,7 +869,8 @@ body {
   left: 20%;
   text-align: center;
   font-family: "맑은고딕";
-  font-size: 25px;
+  font-size: 23px;
+  color: #666;
   /* font-weight: 600; */
   /* color: rgb(102, 99, 99); */
   z-index: 1;
@@ -870,7 +879,6 @@ body {
 .portfolio h5 i {
   font-size: 17px;
   text-align: center;
-
 }
 
 .sw-portfolio {
@@ -1048,7 +1056,7 @@ body {
   background-size: contain;
 }
 .vue-item2 {
-  background: url('../images/ghibli.jpeg') no-repeat center;
+  background: url('../images/ghibli.png') no-repeat center;
   background-size: cover;
 }
 .vue-item3 {
@@ -1118,90 +1126,6 @@ body {
   transform: scale(1.1);
   border: 1px solid #fff;
 }
-
-
-/* 컨텍트 영역 */
-.vision {
-  position: relative;
-  display: block;
-  margin-top: 50px;
-  margin-bottom: 30px;
-}
-
-.vision .inner {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  padding: 30px;
-}
-
-.vision-left {
-  position: relative;
-  display: block;
-  padding: 2%;
-  margin-left: 30px;
-}
-
-.vision-left img {
-  width: 450px;
-  height: 100%;
-}
-
-.vision-right {
-  position: relative;
-  display: block;
-  width: 50%;
-  padding: 1%;
-}
-
-.vision-right h2 {
-  font-size: 32px;
-}
-
-.vision-title {}
-
-.vision-txt {}
-
-.vision-txt h4 {
-  font-size: 20px;
-  /* text-indent: 3%; */
-  font-weight: 500;
-  margin-bottom: 4%;
-  line-height: 15px;
-  /* border-left: 3px solid #f79c92; */
-}
-
-.vision-txt ul {}
-
-.vision-txt li {
-  display: flex;
-  justify-content: space-around;
-  margin: 40px 0;
-}
-
-.vision-txt div {
-}
-
-.vision-txt strong {
-  color: #f79c92;
-  font-size: 22px;
-  font-weight: 500;
-}
-
-.vision-txt p {
-  font-size: 14px;
-  line-height: 27px;
-  letter-spacing: 1px;
-  /* padding-left: 3%; */
-  /* border-left: 2px solid #f3d0cd; */
-}
-
-.vision-txt i {
-  font-size: 15px;
-  font-weight: 500;
-  color: #f9aeae;
-}
-
 
 /* 라이프 영역 */
 .life {
@@ -1359,6 +1283,88 @@ body {
   background-size: cover;
 }
 
+/* vision 영역 */
+.vision {
+  position: relative;
+  display: block;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.vision .inner {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.vision-left {
+  position: relative;
+  display: block;
+  padding: 2%;
+  margin-left: 30px;
+}
+
+.vision-left img {
+  width: 450px;
+  height: 100%;
+}
+
+.vision-right {
+  position: relative;
+  display: block;
+  width: 50%;
+  padding: 1%;
+}
+
+.vision-right h2 {
+  font-size: 32px;
+}
+
+.vision-title {}
+
+.vision-txt {}
+
+.vision-txt h4 {
+  font-size: 20px;
+  /* text-indent: 3%; */
+  font-weight: 500;
+  margin-bottom: 4%;
+  line-height: 15px;
+  /* border-left: 3px solid #f79c92; */
+}
+
+.vision-txt ul {}
+
+.vision-txt li {
+  display: flex;
+  justify-content: space-around;
+  margin: 40px 0;
+}
+
+.vision-txt div {
+}
+
+.vision-txt strong {
+  color: #f79c92;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.vision-txt p {
+  font-size: 14px;
+  line-height: 27px;
+  letter-spacing: 1px;
+  /* padding-left: 3%; */
+  /* border-left: 2px solid #f3d0cd; */
+}
+
+.vision-txt i {
+  font-size: 15px;
+  font-weight: 500;
+  color:  rgb(245, 175, 175, 0.9);
+  /* background-color: rgb(245, 175, 175, 0.6); */
+}
 
 
 /* 푸터 영역 */
@@ -1439,7 +1445,7 @@ body {
 .f-icon ul li img {
   width: 100%;
   height: 100%;
-  transition: transform 1s;
+  transition: transform 0.5s;
 }
 
 .f-icon ul li:hover img {
@@ -1454,7 +1460,6 @@ body {
 
 
 /* 선생님 추천 푸터 */
-
 /* 
 .footer .inner {
   display: flex;

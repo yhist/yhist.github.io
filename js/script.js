@@ -159,8 +159,8 @@ window.onload = function () {
 
 
   let swPortfolio = new Swiper(".sw-portfolio", {
-    slidesPerView: 3,
-    spaceBetween: 100,
+    slidesPerView: 5,
+    spaceBetween: 5,
     slidesPerGroup: 1,
     centeredSlides: true,
     loop: true,
