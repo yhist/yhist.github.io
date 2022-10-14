@@ -884,6 +884,7 @@ body {
   margin: 10px 0 25px 0;
 }
 
+
 .portfolio-cate {
   position: relative;
   display: block;
@@ -894,35 +895,15 @@ body {
   background-color: #fff;
 }
 
-.portfolio h5 {
-  position: absolute;
-  top: 5%;
-  left: 20%;
-  text-align: center;
-  font-family: "맑은고딕";
-  font-size: 23px;
-  color: #666;
-  /* font-weight: 600; */
-  /* color: rgb(102, 99, 99); */
-  z-index: 1;
-}
-
-.portfolio h5 i {
-  font-size: 17px;
-  text-align: center;
-}
-
 .sw-portfolio {
   width: 100%;
   height: 100%;
-}
-
-.port-img{
-  width: 100%;
+  padding: 37px;
 }
 
 .sw-portfolio .swiper-wrapper {
   position: relative;
+  height: 100%;
   /* display: block; */
   font-size: 0;
   margin-bottom: 50px;
@@ -938,8 +919,30 @@ body {
   opacity: 0.5;
 }
 
+.portfolio-list h5 {
+  position: absolute;
+  top: 5%;
+  left: 20%;
+  text-align: center;
+  font-family: "맑은고딕";
+  font-size: 20px;
+  color: #666;
+  /* font-weight: 600; */
+  /* color: rgb(102, 99, 99); */
+  z-index: 1;
+}
+
+.portfolio-list h5 i {
+  font-size: 15px;
+  text-align: center;
+}
+
+.portfolio-list .port-img{
+  width: 100%;
+}
+
 .swiper-slide-active {
-  transform: scale(1.0);
+  transform: scale(1.2);
   opacity: 1.0;
 }
 
@@ -963,10 +966,10 @@ body {
   text-align: center;
   padding: 5px;
   margin: 0 3% 3% 0;
-  font-size: 16px;
+  font-size: 12px;
   white-space: nowrap;
   border: 2px solid #f3d0cd;
-  border-radius: 10px;
+  border-radius: 8px;
   transition: all 0.5s;
 }
 
