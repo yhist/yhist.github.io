@@ -91,7 +91,7 @@ window.onload = function () {
     offset: '70%',
   });
 
-  function makeLine(_id, _str, _startColor, _endColor) {
+  function makeLine(_id, _startColor, _endColor) {
     let bar = new ProgressBar.Line(_id, {
       color: "#777",
       strokeWidth: 10,
@@ -118,26 +118,26 @@ window.onload = function () {
         if (value === 0) {
           line.setText("");
         } else {
-          line.setText(_str + "<br>" + value + '%');
+          line.setText(value + '%');
         }
       },
     });
     bar.text.style.fontFamily = "LeferiBase";
-    bar.text.style.fontSize = "14px";
+    bar.text.style.fontSize = "15px";
     bar.text.style.fontWeight = "500";
     bar.text.style.color = "#333";
     return bar;
   }
 
-  let bar_html = makeLine(html, "HTML", "#fafad2", "#e8a9a2");
-  let bar_css = makeLine(css, "CSS", "#fafad2", "#e8a9a2");
-  let bar_js = makeLine(js, "JS", "#fafad2", "#e8a9a2");
-  let bar_jquery = makeLine(jquery, "JQuery", "#fafad2", "#e8a9a2");
-  let bar_scss = makeLine(scss, "SCSS", "#fafad2", "#e8a9a2");
-  let bar_vue = makeLine(vue, "Vue.js", "#fafad2", "#e8a9a2");
-  let bar_figma = makeLine(figma, "Figma", "#fafad2", "#e8a9a2");
-  let bar_github = makeLine(github, "Github", "#fafad2", "#e8a9a2");
-  let bar_notion = makeLine(notion, "Notion", "#fafad2", "#e8a9a2");
+  let bar_html = makeLine(html, "#fafad2", "#e8a9a2");
+  let bar_css = makeLine(css, "#fafad2", "#e8a9a2");
+  let bar_js = makeLine(js, "#fafad2", "#e8a9a2");
+  let bar_jquery = makeLine(jquery, "#fafad2", "#e8a9a2");
+  let bar_scss = makeLine(scss, "#fafad2", "#e8a9a2");
+  let bar_vue = makeLine(vue, "#fafad2", "#e8a9a2");
+  let bar_figma = makeLine(figma, "#fafad2", "#e8a9a2");
+  let bar_github = makeLine(github, "#fafad2", "#e8a9a2");
+  let bar_notion = makeLine(notion, "#fafad2", "#e8a9a2");
 
   
   let barAni = () => {
@@ -147,15 +147,15 @@ window.onload = function () {
     bar_jquery.animate(0.8);
     bar_scss.animate(0.8);
     bar_vue.animate(0.75);
-    bar_figma.animate(0.93);
+    bar_figma.animate(0.88);
     bar_github.animate(0.85);
-    bar_notion.animate(0.95);
+    bar_notion.animate(0.90);
   };
 
-  const progressbarText = $('.progressbar-text');
-  setTimeout(function () {
-    progressbarText.css('left', 110 + '%');
-  }, 50)
+  // const progressbarText = $('.progressbar-text');
+  // setTimeout(function () {
+  //   progressbarText.css('left', 110 + '%');
+  // }, 50)
 
 
   let swPortfolio = new Swiper(".sw-portfolio", {

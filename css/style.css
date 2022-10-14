@@ -658,7 +658,7 @@ body {
 .skill-pic {
   position: relative;
   display: block;
-  width: 45%;
+  width: 40%;
   height: 100%;
   border-radius: 50%;
 }
@@ -670,7 +670,7 @@ body {
 .skill-bar {
   position: relative;
   display: block;
-  width: 55%;
+  width: 60%;
   height: 100%;
 }
 
@@ -678,7 +678,7 @@ body {
   font-size: 25px;
   font-weight: 500;
   color: #bfd2be;
-  margin-top: 12%;
+  margin-top: 5%;
   margin-bottom: 5%;
 }
 
@@ -704,7 +704,7 @@ body {
 
 .rd div{
   position: relative;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
   text-align: center;
 }
 
@@ -722,10 +722,26 @@ body {
   font-family: "bright_gesture";
 }
 
+.program-skill .skills {
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+}
+
+.program-skill .skills img {
+  width: 30px;
+  height: 30px;
+  margin-left: 4%;
+
+}
+
 .communication-skill {
   position: relative;
   display: inline-block;
   width: 40%;
+  margin-bottom: 2%;
+  vertical-align: top;
 }
 
 .communication-skill h3 {
@@ -733,6 +749,20 @@ body {
   font-size: 25px;
   color: #656363;
   font-family: "bright_gesture";
+
+}
+
+.communication-skill .skills {
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+}
+
+.communication-skill .skills img {
+  width: 30px;
+  height: 30px;
+  margin-left: 4%;
 
 }
 
@@ -814,6 +844,7 @@ body {
   letter-spacing: 1px;
   font-size: 15px;
   line-height: 28px;
+  word-break: keep-all;
 }
 
 .possibility-list strong {
@@ -1307,7 +1338,7 @@ body {
 
 .vision-left img {
   width: 450px;
-  height: 100%;
+  height: 96%;
 }
 
 .vision-right {
@@ -1355,6 +1386,7 @@ body {
   font-size: 14px;
   line-height: 27px;
   letter-spacing: 1px;
+  word-break: keep-all;
   /* padding-left: 3%; */
   /* border-left: 2px solid #f3d0cd; */
 }
