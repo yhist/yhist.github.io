@@ -881,7 +881,7 @@ body {
   text-align: center;
   font-size: 22px;
   color: rgb(101, 99, 99);
-  margin: 10px 0 25px 0;
+  margin: 10px 0 35px 0;
 }
 
 
@@ -1212,7 +1212,7 @@ body {
 }
 .insta-tag-l li:nth-child(3) {
   top: 59%;
-  left: 15%;
+  left: 13%;
 }
 .insta-tag-l li:nth-child(4) {
   top: 80%;
@@ -1224,11 +1224,11 @@ body {
 }
 .insta-tag-r li:nth-child(2) {
   top: 38%;
-  right: 17%;
+  right: 15%;
 }
 .insta-tag-r li:nth-child(3) {
   top: 62%;
-  right: 3%;
+  right: 2%;
 }
 .insta-tag-r li:nth-child(4) {
   top: 87%;
@@ -1293,7 +1293,7 @@ body {
 }
 
 #study {
-  background: url('../images/study.jpeg') no-repeat center;
+  background: url('../images/study.png') no-repeat center;
   background-size: cover;
 }
 
