@@ -194,6 +194,7 @@ body {
   margin-right: 2%;
   position: relative;
   display: inline-block;
+  white-space: nowrap;
 }
 
 .gnb > li {
@@ -245,6 +246,7 @@ body {
   display: block;
   width: 100%;
   height: 100%;
+  text-align: center;
 }
 
 .visual-bg2 {
@@ -253,8 +255,8 @@ body {
   right: 5%;
   transform: translateY(-50%);
   display: block;
-  width: 470px;
-  height: 650px;
+  width: 40.84%;
+  height: 85.53%;
   background-color: #c7d4c6;
 }
 
@@ -264,7 +266,6 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   display: block;
-  width: 76%;
   height: 85%;
 }
 
@@ -360,6 +361,24 @@ body {
   font-size: 18px;
   line-height: 38px;
 }
+
+/* visual 반응형 */
+@media screen and (max-width:1000px) {
+  .visual-bg {
+    left: 0;
+    width: 100vw;
+  }
+
+  .visual-bg2 {
+    background: none;
+  }
+
+  .visual-bg2 img {
+    left: 0;
+  }
+
+}
+
 
 
 /* about 영역 */
