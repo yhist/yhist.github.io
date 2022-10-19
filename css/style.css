@@ -417,21 +417,25 @@ body {
   .visual-bg2 img {
     left: -5%;
     top: 45%;
-    height: 80%;
+    height: 75%;
     border-radius: 200px;
   }
 
   .visual h1 {
     position: absolute;
-    top: 4%;
+    top: 5%;
     left: 50%;
     transform: translateX(-50%);
+    font-size: 25px;
   }
 
   .wrapper {
     left: 50%;
     top: 80%;
     transform: translateX(-50%);
+  }
+  .move-text {
+    font-size: 38px;
   }
   .visual h2 {
     top: 90%;
@@ -441,9 +445,7 @@ body {
   .readme {
     display: none;
   }
-
 }
-
 
 
 /* about 영역 */
@@ -575,6 +577,20 @@ body {
   height: 250px;
   filter: grayscale();
 }
+
+/* about 반응형 */
+@media screen and (max-width:992px) {
+
+}
+
+@media screen and (max-width:900px) {
+
+}
+
+@media screen and (max-width:768px){
+
+}
+
 
 
 /* profile 영역 */
