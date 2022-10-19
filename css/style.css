@@ -446,6 +446,40 @@ body {
     display: none;
   }
 }
+@media screen and (max-width:425px) {
+  .visual-bg {
+    height: 85%;
+  }
+  .visual-bg2 img {
+    left: -10%;
+    top: 35%;
+    height: 65%;
+    border-radius: 200px;
+  }
+
+  .visual h1 {
+    position: absolute;
+    top: 4%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 22px;
+  }
+
+  .wrapper {
+    left: 50%;
+    top: 65%;height: 45px;
+    transform: translateX(-50%);
+  }
+  .move-text {
+    font-size: 35px;
+  }
+  .visual h2 {
+    top: 73%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 23px;
+  }
+}
 
 
 /* about 영역 */
@@ -482,11 +516,13 @@ body {
   position: absolute;
   left: 15%;
   display: block;
+  width: 40%;
+  height: 100%;
 }
 
 .about-top .about-top-pic img{
-  width: 450px;
-  height: 280px;
+  width: 100%;
+  height: 90%;
   box-shadow: inset;
 }
 
@@ -546,18 +582,21 @@ body {
   position: absolute;
   left: 15%;
   width: 40%;
+  word-break: keep-all;
 }
 .about-bottom .about-bottom-txt h3 {
   font-size: 20px;
   font-weight: 500;
   line-height: 30px;
   margin: 4% 0 8% 0;
+  white-space: nowrap;
 }
 
 .about-bottom .about-bottom-txt h3 span {
   color: #b4cdb3;
   font-weight: 500;
   font-size: 22px;
+  white-space: nowrap;
 }
 
 .about-bottom .about-bottom-txt i {
@@ -571,15 +610,59 @@ body {
   position: absolute;
   right: 10%;
   display: block;
+  width: 30%;
 }
 .about-bottom .about-bottom-pic img {
-  width: 350px;
-  height: 250px;
+  width: 100%;
+  height: 100%;
   filter: grayscale();
 }
 
 /* about 반응형 */
+@media screen and (max-width:1065px) {
+
+  .about-top .about-top-pic{
+    left: 50%;
+    transform: translateX(-50%);
+    width: 55%;
+  }
+  .about-top .about-top-pic img {
+    filter: contrast(0.5);
+  }
+
+  .about-top .about-top-txt {
+    right: 50%;
+    transform: translateX(50%);
+    text-align: center;
+    color: #fff;
+  }
+  .about-top .sw-about {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .about-top .swiper-slide {
+    color: #333;
+  }
+
+
+  .about-bottom .about-bottom-txt {
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    line-height: 30px;
+    width: 60%;
+  }
+  .about-bottom .about-bottom-pic {
+    display: none;
+  }
+
+}
 @media screen and (max-width:992px) {
+  .about .inner h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
 
 }
 
