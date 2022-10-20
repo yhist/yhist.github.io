@@ -470,21 +470,22 @@ body {
   .visual h1 {
     position: absolute;
     top: 4%;
-    left: 50%;
+    left: 55%;
     transform: translateX(-50%);
     font-size: 22px;
   }
 
   .wrapper {
     left: 50%;
-    top: 65%;height: 45px;
+    top: 70%;
+    height: 45px;
     transform: translateX(-50%);
   }
   .move-text {
     font-size: 35px;
   }
   .visual h2 {
-    top: 73%;
+    top: 78%;
     left: 50%;
     transform: translateX(-50%);
     font-size: 23px;
@@ -661,7 +662,7 @@ body {
     transform: translate(-50%);
     text-align: center;
     line-height: 30px;
-    width: 60%;
+    width: 65%;
   }
   .about-bottom .about-bottom-pic {
     display: none;
@@ -712,7 +713,7 @@ body {
     font-size: 24px;
   }
   .sw-about .swiper-slide {
-    font-size: 18px;
+    font-size: 16px;
   }
 
 
@@ -736,6 +737,31 @@ body {
 @media screen and (max-width:425px) {
   .about .inner {
     padding-top: 0;
+  }
+  .about-top .about-top-pic {
+    width: 75%;
+  }
+  .about-top .about-top-txt p {
+    font-size: 15px;
+  }
+  .about-top .about-top-txt span {
+    font-size: 19px;
+  }
+  .sw-about .swiper-slide {
+    font-size: 13px;
+  }
+
+  .about-bottom .about-bottom-txt h3 {
+    font-size: 15px;
+  }
+  .about-bottom .about-bottom-txt h3 span {
+    font-size: 16px;
+  }
+  .about-bottom .about-bottom-txt p {
+    font-size: 13px;
+  }
+  .about-bottom .about-bottom-txt p i {
+    font-size: 14px;
   }
 }
 
@@ -865,7 +891,7 @@ body {
   left: 50%;
   width: 80%;
   transform: translateX(-50%);
-  font-size: 12.5px;
+  font-size: 11.5px;
 }
 
 .mbti img {
@@ -1012,6 +1038,30 @@ body {
   margin-left: 4%;
 
 }
+
+
+/* profile 반응형 */
+@media screen and (max-width:1065px) {
+
+}
+
+@media screen and (max-width:992px) {
+
+}
+
+@media screen and (max-width:900px) {
+
+
+}
+
+@media screen and (max-width:768px){
+
+}
+
+@media screen and (max-width:425px) {
+
+}
+
 
 
 
