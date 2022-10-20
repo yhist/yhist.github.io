@@ -224,6 +224,24 @@ body {
   /* text-shadow: ; */
 }
 
+/* header 반응형 */
+@media screen and (max-width:768px) {
+  .header {
+    height: 70px;
+  }
+  .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .gnb {
+    display: none;
+  }
+
+}
+
+
 /* 비주얼 영역 */
 .visual {
   position: relative;
@@ -403,17 +421,6 @@ body {
 }
 
 @media screen and (max-width:768px){
-  .logo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 3px 0;
-  }
-  .gnb {
-    display: none;
-  }
-
   .visual-bg2 img {
     left: -5%;
     top: 45%;
@@ -447,8 +454,11 @@ body {
   }
 }
 @media screen and (max-width:425px) {
+  .visual {
+    height: 600px;
+  }
   .visual-bg {
-    height: 85%;
+    height: 95%;
   }
   .visual-bg2 img {
     left: -10%;
@@ -626,6 +636,7 @@ body {
     transform: translateX(-50%);
     width: 55%;
   }
+
   .about-top .about-top-pic img {
     filter: contrast(0.5);
   }
@@ -645,7 +656,6 @@ body {
     color: #333;
   }
 
-
   .about-bottom .about-bottom-txt {
     left: 50%;
     transform: translate(-50%);
@@ -658,22 +668,76 @@ body {
   }
 
 }
+
 @media screen and (max-width:992px) {
   .about .inner h2 {
-    font-size: 35px;
+    font-size: 38px;
     margin-bottom: 20px;
   }
 
 }
 
 @media screen and (max-width:900px) {
+  .about .inner h2 {
+    font-size: 30px;
+  }
+  .about-top .about-top-txt {
+    font-size: 20px;
+  }
+  .about-top .about-top-pic {
+    width: 60%;
+  }
+  .sw-about .swiper-slide {
+    font-size: 20px;
+  }
+
+  .about-bottom .about-bottom-txt {
+    /* width: 50%; */
+  }
 
 }
 
 @media screen and (max-width:768px){
+  .about-top .about-top-pic{
+    height: 75%;
+    width: 70%;
+  }
+  .about-top .about-top-txt {
+    top: 15%;
+  }
+  .about-top .about-top-txt p {
+    font-size: 20px;
+  }
+  .about-top .about-top-txt span {
+    font-size: 24px;
+  }
+  .sw-about .swiper-slide {
+    font-size: 18px;
+  }
 
+
+  .about-bottom .about-bottom-txt {
+    top: -27%;
+  }
+  .about-bottom .about-bottom-txt h3 {
+    font-size: 18px;
+  }
+  .about-bottom .about-bottom-txt h3 span {
+    font-size: 18px;
+  }
+  .about-bottom .about-bottom-txt p {
+    font-size: 14px;
+  }
+  .about-bottom .about-bottom-txt p i {
+    font-size: 15px;
+  }
 }
 
+@media screen and (max-width:425px) {
+  .about .inner {
+    padding-top: 0;
+  }
+}
 
 
 /* profile 영역 */
