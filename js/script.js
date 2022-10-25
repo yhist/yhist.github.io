@@ -158,33 +158,33 @@ window.onload = function () {
   // }, 50)
 
 
-  let swPortfolio = new Swiper(".sw-portfolio", {
-    slidesPerView: 5,
-    spaceBetween: 5,
-    slidesPerGroup: 1,
-    centeredSlides: true,
-    loop: true,
-    autoplay: {
-      delay: 3100,
-    },
-    loopFillGroupWithBlank: true,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
+  // let swPortfolio = new Swiper(".sw-portfolio", {
+  //   slidesPerView: 5,
+  //   spaceBetween: 5,
+  //   slidesPerGroup: 1,
+  //   centeredSlides: true,
+  //   loop: true,
+  //   autoplay: {
+  //     delay: 3100,
+  //   },
+  //   loopFillGroupWithBlank: true,
+  //   pagination: {
+  //     el: '.swiper-pagination',
+  //     clickable: true,
+  //   },
+  //   navigation: {
+  //     nextEl: ".swiper-button-next",
+  //     prevEl: ".swiper-button-prev",
+  //   },
 
-  });
+  // });
 
-  let portfolio = $('.sw-portfolio')
-  portfolio.hover(function () {
-    swPortfolio.autoplay.stop()
-  }, function () {
-    swPortfolio.autoplay.start()
-  });
+  // let portfolio = $('.sw-portfolio')
+  // portfolio.hover(function () {
+  //   swPortfolio.autoplay.stop()
+  // }, function () {
+  //   swPortfolio.autoplay.start()
+  // });
 
 
   // 라이프 슬라이드

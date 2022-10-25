@@ -462,7 +462,7 @@ body {
   }
   .visual-bg2 img {
     left: -10%;
-    top: 35%;
+    top: 40%;
     height: 65%;
     border-radius: 200px;
   }
@@ -1156,307 +1156,137 @@ body {
 }
 
 
+
+
 /* 포트폴리오 영역 */
-.portfolio {
+.portfolio-header {
   position: relative;
-  display: block;
-  margin: 30px;
+  display: flex;
+  justify-content: space-between;
+  margin: 5% 0;
 }
 
-.portfolio h2 {
+.portfolio-header h2 {
   font-family: "bright_gesture";
-  text-align: center;
-  font-size: 40px;
-  color: #b4cdb3;
-}
-
-.portfolio-wrap {
-  position: relative;
-}
-
-.portfolio h3 {
-  text-align: center;
-  font-size: 22px;
-  color: rgb(101, 99, 99);
-  margin: 10px 0 35px 0;
-}
-
-
-.portfolio-cate {
-  position: relative;
+  color: #b4cdb3;  
   display: block;
-  /* width: 89%; */
-  margin: 0 auto;
-  margin-top: 35px;
-  margin-bottom: 5%;
-  background-color: #fff;
+  font-size: 40px;
 }
 
-.sw-portfolio {
-  width: 100%;
-  height: 100%;
-  padding: 37px;
-}
-
-.sw-portfolio .swiper-wrapper {
+.port-menu {
   position: relative;
-  height: 100%;
-  /* display: block; */
-  font-size: 0;
-  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.portfolio-body {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .portfolio-list {
   position: relative;
-  display: inline-block;
-  /* margin-left: 1.3%; */
-  width: 30%;
-  transform: scale(0.7);
-  transition: all 0.5s;
-  opacity: 0.5;
+  display: block;
+  padding: 2%;
+  margin-bottom: 3%;
+  width: 32%;
+  /* border: 1px solid rgb(153, 153, 153, 0.1); */
+  border-radius: 18px;
+  box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px;
 }
 
-.portfolio-list h5 {
-  position: absolute;
-  top: 5%;
-  left: 20%;
-  text-align: center;
-  font-family: "맑은고딕";
-  font-size: 20px;
-  color: #666;
-  /* font-weight: 600; */
-  /* color: rgb(102, 99, 99); */
-  z-index: 1;
-}
-
-.portfolio-list h5 i {
-  font-size: 15px;
+.portfolio-list h3 {
+  font-size: 23px;
+  /* color: #f79c92; */
+  font-family: "Noto Sans KR";
+  font-weight: 500;
   text-align: center;
 }
 
-.portfolio-list .port-img{
-  width: 100%;
-}
-
-.swiper-slide-active {
-  transform: scale(1.2);
-  opacity: 1.0;
-}
-
-.swiper-slide-active .portfolio-link {
-  opacity: 1;
-}
-
-.portfolio-link {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  width: 85%;
-  opacity: 0;
-  margin-top: 30px;
-}
-
-.portfolio-link a {
-  position: relative;
-  display: inline-block;
-  width: 25%;
+.portfolio-list p {
+  font-size: 14px;
+  margin: 4% 0 ;
+  word-break: keep-all;
+  line-height: 20px;
+  color: #999;
   text-align: center;
-  padding: 5px;
-  margin: 0 3% 3% 0;
-  font-size: 12px;
-  white-space: nowrap;
-  border: 2px solid #f3d0cd;
-  border-radius: 8px;
-  transition: all 0.5s;
 }
 
-.portfolio-link .vue {
-  width: 35%;
-  border: 2px solid #d1e0d0 ;
-}
-
-.portfolio-link a:hover {
-  background-color: #f3d0cd;
-  color: #fff;
-  transform: scale(1.05);
-}
-
-.portfolio-link .vue:hover {
-  background-color: #d1e0d0 ;
-}
-
-
-.swiper-pagination {
+.card-front {
   position: relative;
   display: block;
-}
-
-.swiper-pagination-bullet { 
-  width: 12px; 
-  height: 12px; 
-  background: transparent; 
-  border: 1px solid #f79c92; 
-  opacity: 1; 
-}
-
-.swiper-pagination-bullet-active { 
-  width: 40px; 
-  transition: width .5s; 
-  border-radius: 5px; 
-  background: #f79c92; 
-  border: 1px solid transparent; 
-}
-
-
-.vue-port{
-  position: relative;
   width: 100%;
-  font-size: 0;
-}
-.vue-port .inner{
-  height: 450px;
-}
-
-.vue-port-left{
-  position: relative;
-  display: inline-block;
-  width: 28%;
-  height: 100%;
-  margin: 0 1%;
-}
-
-.vue-port-left h3{
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%,-50%);
-  text-align: center;
-  font-size: 30px;
-}
-
-.vue-port-right{
-  display: inline-block;
-  width: 68%;
-  height: 100%;
-  margin: 0 1%;
-  font-size: 16px;
-  vertical-align: top;
-}
-
-.vue-port-right ul{
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: space-between;
-}
-
-.vue-port-right ul li{
-  position: relative;
-  width: 45%;
-  height: 48%;
   overflow: hidden;
-  transform: scale(0.97);
-  transition: transform 0.5s;
-  box-shadow: 1px 1px 3px rgb(182, 182, 182);
-
+  border-radius: 5px;
+  border: 1px solid rgb(153, 153, 153, 0.2);
 }
 
-.vue-port-right ul li:hover{
-  transform: scale(1);
-}
-
-.vue-port-right ul li::before{
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
+.card-front img {
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0);
-  transition: background-color 0.5s;
 }
 
-.vue-port-right ul li:hover::before{
-  background-color: rgba(0,0,0,0.6);
+.port-info {
+  position: relative;
+  display: block; 
 }
 
-.vue-item1 {
-  background: url('../images/minimemo.jpeg') no-repeat center;
-  background-size: contain;
-}
-.vue-item2 {
-  background: url('../images/ghibli.png') no-repeat center;
-  background-size: cover;
-}
-.vue-item3 {
-  background: url('../images/todorest.jpeg') no-repeat center;
-  background-size: contain;
-}
-.vue-item4 {
-  background: url('../images/not-prepare.png') no-repeat center;
-  background-size: cover;
-}
-
-.vue-info {
-  position: absolute;
-  left: 0;
-  bottom: -100%;
-  width: 100%;
+.port-skill {
+  position: relative;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #daebd9;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.port-skill li {
+  position: relative;
+  margin: 5% 3%;
+  opacity: 0.7;
+}
+
+.fa-html5 {
+  color: #aa2d17;
+}
+.fa-css3-alt {
+  color: #1774AA;
+}
+.fa-sass {
+  color: #ca2d6c;
+}
+.fa-js {
+  color: #f4ea32;
+}
+.fa-vuejs {
+  color: #3ddb54;
+}
+
+
+.port-link {
+  position: relative;
+  display: flex;
   text-align: center;
-  padding: 10px;
-  opacity: 0;
-  transition: bottom 0.5s;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 5% 0;
+  font-size: 13px;
 }
 
-.vue-info-txt {
-  color: #fff;
-  font-family: '맑은 고딕';
+.port-link li {
+  width: 30%;
+  padding: 2%;
+  margin: 1%;
+  margin-bottom: 2%;
+  border: 1px solid rgb(159, 186, 158, 0.7);
+  border-radius: 20px;
 }
 
-.vue-info-txt span {
-  display: inline-block;
-  font-weight: 600;
-  font-size: 22px;
-  margin-right: 3%;
-}
-.vue-info-txt p {
-  display: inline-block;
-  font-size: 16px;
-  font-weight: 400;
+.port-link li a {
+  color: rgb(159, 186, 158, 0.7);
 }
 
-.vue-port-right ul li:hover .vue-info{
-  bottom: 0%;
-  opacity: 1;
-}
 
-.vue-info-link {
-  /* background-color: #fff; */
-}
-
-.vue-info-link a {
-  line-height: 44px;
-  padding: 7px;
-  margin-right: 5px;
-  color: #bfd2be;
-  background-color: #fff;
-  border-radius: 10px;
-  border: 1px solid rgba(239, 161, 152,0);
-  transition: all 0.5s;
-}
-
-.vue-info-link a:hover {
-  color: #fff;
-  background-color: #bfd2be;
-  transform: scale(1.1);
-  border: 1px solid #fff;
-}
 
 /* 라이프 영역 */
 .life {
