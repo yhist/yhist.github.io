@@ -80,7 +80,17 @@ window.onload = function () {
   });
 
 
-
+  let barAni = () => {
+    bar_html.animate(0.95);
+    bar_css.animate(0.9);
+    bar_js.animate(0.75);
+    bar_jquery.animate(0.8);
+    bar_scss.animate(0.8);
+    bar_vue.animate(0.75);
+    bar_figma.animate(0.88);
+    bar_github.animate(0.85);
+    bar_notion.animate(0.90);
+  };
   // 프로필 페이지 도착시 프로그래스바 실행
   let profile = $('.skill');
   new Waypoint({
@@ -140,17 +150,7 @@ window.onload = function () {
   let bar_notion = makeLine(notion, "#fafad2", "#e8a9a2");
 
   
-  let barAni = () => {
-    bar_html.animate(0.95);
-    bar_css.animate(0.9);
-    bar_js.animate(0.75);
-    bar_jquery.animate(0.8);
-    bar_scss.animate(0.8);
-    bar_vue.animate(0.75);
-    bar_figma.animate(0.88);
-    bar_github.animate(0.85);
-    bar_notion.animate(0.90);
-  };
+
 
   // const progressbarText = $('.progressbar-text');
   // setTimeout(function () {
