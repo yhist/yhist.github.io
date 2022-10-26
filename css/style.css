@@ -1214,16 +1214,44 @@ body {
   text-align: center;
 }
 
-.card-front {
+.port-card {
   position: relative;
-  display: block;
+  perspective: 900px;
+}
+
+.port-card .card {
+  position: absolute;
+  top: 0;
   width: 100%;
-  overflow: hidden;
+  height: 100%;
+  backface-visibility: hidden;
+  transition: 1s;
   border-radius: 5px;
   border: 1px solid rgb(153, 153, 153, 0.2);
 }
 
-.card-front img {
+.port-card .card.front {
+  position: relative;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  transform: rotateY(0deg);
+}
+
+.port-card:hover .card.front {
+  transform: rotateY(180deg);
+}
+
+.port-card .card.back {
+  border: 1px solid rgb(223, 217, 217);
+  transform: rotateY(-180deg);
+}
+
+.port-card:hover .card.back {
+  transform: rotateY(0deg);
+}
+
+.front img {
   width: 100%;
   height: 100%;
 }
@@ -1280,6 +1308,15 @@ body {
   margin-bottom: 2%;
   border: 1px solid rgb(159, 186, 158, 0.7);
   border-radius: 20px;
+  transition: all 0.7s;
+}
+
+.port-link li:hover {
+  background-color: rgb(159, 186, 158, 0.7);
+}
+
+.port-link li:hover a {
+  color: #fff;
 }
 
 .port-link li a {
