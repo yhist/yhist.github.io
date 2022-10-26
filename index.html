@@ -53,12 +53,6 @@
   <script src="js/lightbox2/js/lightbox.js"></script>
   <!-- Progressbar -->
   <script type="text/javascript" src="js/progressbar/progressbar.js"></script>
-  <!-- lineProgressbar -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
-  <!-- <script src="jquery.lineProgressbar.js"></script> -->
-  <!-- chart.js -->
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
 
   <link rel="stylesheet" href="css/style.css" />
   <script src="js/script.js"></script>
@@ -67,6 +61,7 @@
 
 <body>
 
+  <!-- 사이드메뉴 -->
   <div class="sns-menu-list">
     <i class="fas fa-ellipsis-h sns-menu-open"></i>
     <ul>
@@ -84,6 +79,7 @@
       </li>
     </ul>
   </div>
+  <!-- 위로가기 -->
   <div class="go-top">
     <i class="fas fa-chevron-up"></i>
   </div>
@@ -113,6 +109,7 @@
       </div>
     </header>
 
+    <!-- 비주얼 -->
     <section class="visual" id="home">
       <div class="visual-bg"></div>
       <div class="inner">
@@ -132,6 +129,7 @@
       </div>
     </section>
 
+    <!-- 어바웃 -->
     <section class="about" id="about">
       <div class="inner">
         <h2>Who am i</h2>
@@ -151,7 +149,6 @@
                 <div class="swiper-slide">책임감이 있는</div>
               </div>
             </div>
-            <!-- <span class="no-ls">_______</span> -->
             <span>도연희</span>
             <P>입니다.</p>
           </div>
@@ -172,7 +169,7 @@
       </div>
     </section>
 
-
+    <!-- 프로핑 -->
     <section class="profile" id="profile">
       <div class="inner">
         <div class="profile-text">
@@ -235,7 +232,7 @@
             </li>
           </ul>
         </div>
-        <div class="mbti">
+        <div class="mbti" data-aos="zoom-in" data-aos-duration="700">
           <div class="bubble">
             <h3>ESFJ</h3>
             <p>
@@ -245,8 +242,8 @@
           </div>
           <img src="images/mbti.png" alt="mbti이미지">
         </div>
-
       </div>
+
       <div class="skill">
         <div class="inner skill-box">
           <div class="skill-pic">
@@ -305,7 +302,7 @@
       </div>
     </section>
 
-
+    <!-- 가능성 -->
     <section class="possibility" id="possibility">
       <div class="inner">
         <h2>POSSIBILITY</h2>
@@ -372,22 +369,19 @@
           <h2>PORTFOLIO</h2>
           <ul class="port-menu">
             <li>
-              <input type="radio" name="potfolio" id="all">
-              <label for="all">All</label>
+              <button class="port-bt bt-line" data-port="all">All</button>
             </li>
             <li>
-              <input type="radio" name="potfolio" id="publishing">
-              <label for="Publishing">Publishing</label>
+              <button class="port-bt bt-line" data-port="publishing">Publishing</button>
             </li>
             <li>
-              <input type="radio" name="potfolio" id="vue-study">
-              <label for="vue">Vue.js</label>
+              <button class="port-bt bt-line" data-port="vue">Vue.js</button>
             </li>
           </ul>
         </div>
         <div class="portfolio-body">
 
-          <div class="portfolio-list" data-item="publishing">
+          <div class="portfolio-list" data-aos="zoom-in" data-aos-duration="700" data-item="publishing/vue">
             <h3>거제청년센터 이룸</h3>
             <p>
               <i class="fas fa-desktop"></i>
@@ -426,7 +420,7 @@
             </div>
 
           </div>
-          <div class="portfolio-list" data-item="publishing">
+          <div class="portfolio-list" data-aos="zoom-in" data-aos-duration="700" data-item="publishing">
             <h3>K-Water</h3>
             <p>
               <i class="fas fa-desktop"></i>
@@ -453,14 +447,12 @@
             </div>
 
           </div>
-          <div class="portfolio-list" data-item="publishing">
+          <div class="portfolio-list" data-aos="zoom-in" data-aos-duration="700" data-item="publishing/vue">
             <h3>노엘로힐스</h3>
             <p>
               <i class="fas fa-desktop"></i>
               <i class="bi bi-slash"></i>
               <i class="fas fa-mobile-alt"></i>
-              <!-- <i class="bi bi-slash"></i> -->
-              <!-- <i class="fab fa-vuejs"></i> -->
             </p>
             <div class="port-card">
               <div class="card front">
@@ -485,14 +477,12 @@
             </div>
 
           </div>
-          <div class="portfolio-list" data-item="publishing">
+          <div class="portfolio-list" data-aos="zoom-in" data-aos-duration="700" data-item="publishing/vue">
             <h3>마시그래이</h3>
             <p>
               <i class="fas fa-desktop"></i>
               <i class="bi bi-slash"></i>
               <i class="fas fa-mobile-alt"></i>
-              <!-- <i class="bi bi-slash"></i> -->
-              <!-- <i class="fab fa-vuejs"></i> -->
             </p>
             <div class="port-card">
               <div class="card front">
@@ -517,7 +507,7 @@
             </div>
 
           </div>
-          <div class="portfolio-list" data-item="publishing">
+          <div class="portfolio-list" data-aos="zoom-in" data-aos-duration="700" data-item="publishing">
             <h3>leeumstore</h3>
             <p>
               <i class="fas fa-desktop"></i>
@@ -544,7 +534,7 @@
             </div>
 
           </div>
-          <div class="portfolio-list" data-item="publishing">
+          <div class="portfolio-list" data-aos="zoom-in" data-aos-duration="700" data-item="publishing">
             <h3>정육각</h3>
             <p>
               <i class="fas fa-desktop"></i>
@@ -571,12 +561,12 @@
             </div>
 
           </div>
-          <div class="portfolio-list" data-item="publishing">
+          <div class="portfolio-list" data-aos="zoom-in" data-aos-duration="700" data-item="publishing/vue">
             <h3>STX 건설</h3>
             <p>
               <i class="fas fa-desktop"></i>
               <!-- <i class="bi bi-slash"></i>
-                  <i class="fas fa-mobile-alt"></i> -->
+              <i class="fas fa-mobile-alt"></i> -->
             </p>
             <div class="port-card">
               <div class="card front">
@@ -601,13 +591,12 @@
             </div>
 
           </div>
-
-          <div class="portfolio-list" data-item="vue-study">
+          <div class="portfolio-list" data-aos="zoom-in" data-aos-duration="700" data-item="vue">
             <h3>Mini Blog</h3>
             <p>
               <i class="fas fa-desktop"></i>
               <!-- <i class="bi bi-slash"></i>
-                  <i class="fas fa-mobile-alt"></i> -->
+              <i class="fas fa-mobile-alt"></i> -->
             </p>
             <div class="port-card">
               <div class="card front">
@@ -629,8 +618,7 @@
             </div>
 
           </div>
-
-          <div class="portfolio-list" data-item="vue-study">
+          <div class="portfolio-list" data-aos="zoom-in" data-aos-duration="700" data-item="vue">
             <h3>Ghibli</h3>
             <p>
               <i class="fas fa-desktop"></i>
@@ -654,7 +642,7 @@
             </div>
 
           </div>
-          <div class="portfolio-list" data-item="vue-study">
+          <div class="portfolio-list" data-aos="zoom-in" data-aos-duration="700" data-item="vue">
             <h3>Todo List</h3>
             <p>
               <i class="fas fa-desktop"></i>
@@ -678,11 +666,10 @@
             </div>
 
           </div>
-
-
         </div>
     </section>
 
+    <!-- 라이프 -->
     <section class="life" id="life">
       <div class="inner">
         <div class="life-top">
@@ -720,9 +707,10 @@
       </div>
     </section>
 
+    <!-- 비전 -->
     <section class="vision" id="vision">
       <div class="inner">
-        <div class="vision-left">
+        <div class="vision-left" data-aos="zoom-in" data-aos-duration="700">
           <img src="images/vision-pic.jpeg" alt="">
         </div>
         <div class="vision-right">
@@ -767,23 +755,10 @@
       </div>
     </section>
 
-
+    <!-- 푸터 -->
     <footer class="footer">
       <div class="inner">
         <h2>Thanks for stopping by!</h2>
-        <!-- <div class="contact">
-          <ul>
-            <li>
-              <a href="mailto: ehdusgml0903@naver.com" class="f-mail">
-                <img src="images/f-mail.png" alt="메일 아이콘"></a>
-            </li>
-            <li>
-              <a href="https://open.kakao.com/o/sXrenCHe" class="f-kakao" target="_blank">
-                <img src="images/f-kakao.png" alt="카카오톡 아이콘">
-              </a>
-            </li>
-          </ul>
-        </div> -->
         <div class="f-icon">
           <ul>
             <li>
@@ -799,10 +774,6 @@
               <a href="https://open.kakao.com/o/sXrenCHe" class="f-kakao" target="_blank">
                 <img src="images/f-kakao.png" alt="카카오톡 아이콘">
               </a>
-            </li>
-            <li>
-              <a href="https://www.notion.so/fdc9c82c6bc44d728124df9868023c27" class="f-notion" target="_blank"><img
-                  src="images/notion.png" alt="노션 아이콘"></a>
             </li>
             <li>
               <a href="https://www.instagram.com/y__hi.st/" class="f-insta" target="_blank"><img
@@ -853,8 +824,6 @@
         <span>© 2022. DOYEONHEE All rights reserved.</span>
       </div>
     </footer> -->
-
-
 
 
 

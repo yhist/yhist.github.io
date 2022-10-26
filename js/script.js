@@ -1,49 +1,49 @@
 window.onload = function () {
   AOS.init();
 
-  const snsMenuOpen = $('.sns-menu-list > i');
-  const snsMenu = $('.sns-menu-list > ul');
+  const snsMenuOpen = $(".sns-menu-list > i");
+  const snsMenu = $(".sns-menu-list > ul");
   snsMenuOpen.click(function () {
     snsMenu.stop().slideToggle();
-    if (snsMenuOpen.hasClass('fa-ellipsis-h')) {
-      snsMenuOpen.removeClass('fa-ellipsis-h');
-      snsMenuOpen.addClass('fa-times');
+    if (snsMenuOpen.hasClass("fa-ellipsis-h")) {
+      snsMenuOpen.removeClass("fa-ellipsis-h");
+      snsMenuOpen.addClass("fa-times");
     } else {
-      snsMenuOpen.addClass('fa-ellipsis-h');
-      snsMenuOpen.removeClass('fa-times');
+      snsMenuOpen.addClass("fa-ellipsis-h");
+      snsMenuOpen.removeClass("fa-times");
     }
   });
 
   // 위로가기
-  let goTop = $('.go-top');
+  let goTop = $(".go-top");
   goTop.click(function () {
     scrollTo({
       top: 0,
       behavior: "smooth",
-    })
-  })
+    });
+  });
 
   // 화면이동시 커서 유지
-  let Section = $('section');
+  let Section = $("section");
   let sectionH = [];
-  let gnbLi = $('.gnb > li > a')
-  
+  let gnbLi = $(".gnb > li > a");
+
   $.each(Section, function (index) {
     let Wh = Math.ceil($(this).offset().top - 80);
-    sectionH[index] = Wh
+    sectionH[index] = Wh;
     new Waypoint({
       element: $(this),
       handler: function (direction) {
-        if (direction == 'down') {
-          gnbLi.removeClass('gnb-active');
-          gnbLi.eq(index).addClass('gnb-active')
-        } else if (direction == 'up') {
+        if (direction == "down") {
+          gnbLi.removeClass("gnb-active");
+          gnbLi.eq(index).addClass("gnb-active");
+        } else if (direction == "up") {
           let upIndex = index - 1;
-          gnbLi.removeClass('gnb-active');
-          gnbLi.eq(upIndex).addClass('gnb-active')
+          gnbLi.removeClass("gnb-active");
+          gnbLi.eq(upIndex).addClass("gnb-active");
         }
       },
-      offset: '50%',
+      offset: "50%",
     });
   });
 
@@ -53,20 +53,23 @@ window.onload = function () {
       scrollTo({
         top: sectionH[index],
         left: 0,
-        behavior: 'smooth',
-      })
-    })
+        behavior: "smooth",
+      });
+    });
   });
 
-  // mywork누르면 portfolio로 
-  const readMe = $('.readme');
+  // mywork누르면 portfolio로
+  const readMe = $(".readme");
   // const myWork = $('#portfolio')
   readMe.click(function (event) {
     event.preventDefault();
-    $('html, body').animate({
-      scrollTop: $("#portfolio").offset().top - 80
-    }, 2000);
-  })
+    $("html, body").animate(
+      {
+        scrollTop: $("#portfolio").offset().top - 80,
+      },
+      2000
+    );
+  });
 
   new Swiper(".sw-about", {
     slidesPerView: 1,
@@ -79,15 +82,14 @@ window.onload = function () {
     loopFillGroupWithBlank: true,
   });
 
-
   // 프로필 페이지 도착시 프로그래스바 실행
-  let profile = $('.skill');
+  let profile = $(".skill");
   new Waypoint({
     element: profile,
     handler: function (direction) {
       barAni();
     },
-    offset: '70%',
+    offset: "70%",
   });
 
   function makeLine(_id, _startColor, _endColor) {
@@ -117,7 +119,7 @@ window.onload = function () {
         if (value === 0) {
           line.setText("");
         } else {
-          line.setText(value + '%');
+          line.setText(value + "%");
         }
       },
     });
@@ -147,15 +149,13 @@ window.onload = function () {
     bar_vue.animate(0.75);
     bar_figma.animate(0.88);
     bar_github.animate(0.85);
-    bar_notion.animate(0.90);
+    bar_notion.animate(0.9);
   };
-
 
   // const progressbarText = $('.progressbar-text');
   // setTimeout(function () {
   //   progressbarText.css('left', 110 + '%');
   // }, 50)
-
 
   // let swPortfolio = new Swiper(".sw-portfolio", {
   //   slidesPerView: 5,
@@ -185,9 +185,8 @@ window.onload = function () {
   //   swPortfolio.autoplay.start()
   // });
 
-
   // 라이프 슬라이드
-  const swLife = new Swiper('.sw-life', {
+  const swLife = new Swiper(".sw-life", {
     loop: true,
     effect: "fade",
     autoplay: {
@@ -195,24 +194,57 @@ window.onload = function () {
     },
   });
 
-  swLife.on("slideChange",function(){
+  swLife.on("slideChange", function () {
     const activeLife = swLife.realIndex;
-    tagList.removeClass('active');
-    tagList.eq(activeLife).addClass('active');
-  })
+    tagList.removeClass("active");
+    tagList.eq(activeLife).addClass("active");
+  });
 
   // life 탭메뉴 효과
-  const tagList = $('.tag-list');
-  tagList.eq(0).addClass('active');
-  $.each(tagList,function(index){
-    $(this).click(function(e){
+  const tagList = $(".tag-list");
+  tagList.eq(0).addClass("active");
+  $.each(tagList, function (index) {
+    $(this).click(function (e) {
       e.preventDefault();
-      tagList.removeClass('active');
-      tagList.eq(index).addClass('active');
-      swLife.slideTo( index + 1 , 500 , false );
+      tagList.removeClass("active");
+      tagList.eq(index).addClass("active");
+      swLife.slideTo(index + 1, 500, false);
       swLife.autoplay.start();
-    })
-  })
-  
+    });
+  });
 
-}
+
+
+  // 포트폴리오 탭 기능
+  let portBt = $(".port-bt");
+  let portList = $(".portfolio-list");
+  let portChoice = "all";
+  $.each(portBt, function (index, item) {
+    $(this).click(function () {
+      let tempCate = $(this).attr("data-port");
+      portChoice = tempCate;
+      portSort();
+    });
+  });
+
+  function portSort() {
+    $.each(portList, function (index, item) {
+      if (portChoice === "all") {
+        $(this).show();
+        return;
+      }
+      let tempCate = $(this).attr("data-item");
+      tempCate = tempCate.split("/");
+      if (tempCate[0] == portChoice || tempCate[1] == portChoice) {
+        $(this).show();
+      } else {
+        $(this).hide();
+      }
+    });
+  }
+
+  portSort();
+
+
+
+};
