@@ -245,6 +245,4 @@ window.onload = function () {
 
   portSort();
 
-
-
 };
