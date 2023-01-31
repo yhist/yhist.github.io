@@ -1292,7 +1292,7 @@ body {
   transform: rotateY(0deg);
 }
 
-.port-card:hover .card.front {
+/* .port-card:hover .card.front {
   transform: rotateY(180deg);
 }
 
@@ -1303,7 +1303,7 @@ body {
 
 .port-card:hover .card.back {
   transform: rotateY(0deg);
-}
+} */
 
 .front img {
   width: 100%;
